@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="glossy.xsl"?><!-- Added for transformation 2012-04-22--><Lexicon>
+  <Language>Ikwere</Language>
+  <FontName>Charis SIL Compact</FontName>
+  <FontSize>18</FontSize>
+  <Entries>
+    <item>
+      <Lexeme Type="Word" Form="mkpụru" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">seed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ke" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpasịri" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">planted</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="n'ẹli" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">on land</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="bụru" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">is</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Phrase" Form="nụ lele" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">is like</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ele" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">those</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Phrase" Form="ikwu-ọnu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">word</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wam" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="a" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ọ" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">it</Gloss>
+        </Sense>
+        <Sense Id="1">
+          <Gloss Language="ENGLISH">he</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nri" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">10</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="be" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">they</Gloss>
+        </Sense>
+        <Sense Id="1">
+          <Gloss Language="ENGLISH">them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ọma" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">good</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nụrnu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">hear</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="narnụ" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">accept</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mịpiya" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">produce</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ẹto" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">three</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="berere" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">other</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="isunu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">six</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="otu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">one</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="riwhu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">hundred</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="elulu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">parable</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tọnji" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">lamp</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="n'olu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">on</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ikpechi" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">table</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lukwu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">luke</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kanụ" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">said to</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nụ" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">on</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="bụ́o" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">is not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nhne" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">thing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="anụ" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="neegweya" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">bring</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="bịta" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">keep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Phrase" Form="nụ mkpururu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">under</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mọbu" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">or</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ọkpata" Homograph="1" />
+      <Entry>
+        <Sense Id="0">
+          <Gloss Language="ENGLISH">bed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+  </Entries>
+  <Analyses />
+</Lexicon>

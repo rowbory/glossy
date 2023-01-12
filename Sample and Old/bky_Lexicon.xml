@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="glossy.xsl"?><!-- Added for transformation 2012-04-22--><Lexicon>
+  <Language>Bokyi</Language>
+  <FontName>Charis SIL Compact</FontName>
+  <FontSize>18</FontSize>
+  <Entries>
+    <item>
+      <Lexeme Type="Phrase" Form="chwǒm nang kyibónge" Homograph="1" />
+      <Entry>
+        <Sense Id="pjADAuZE">
+          <Gloss Language="English">Nothing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="osówo" Homograph="1" />
+      <Entry>
+        <Sense Id="ENXGuwTb">
+          <Gloss Language="English">god</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ne" Homograph="1" />
+      <Entry>
+        <Sense Id="ioKBmRvT">
+          <Gloss Language="English">and</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+  </Entries>
+  <Analyses>
+    <item>
+      <string>abyibabang</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Prefix" Form="a" Homograph="1" />
+        <Lexeme Type="Stem" Form="byibabang" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+    <item>
+      <string>abyísha</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Stem" Form="abyísha" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+    <item>
+      <string>chîkpú</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Prefix" Form="chî" Homograph="1" />
+        <Lexeme Type="Stem" Form="kpú" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+  </Analyses>
+</Lexicon>

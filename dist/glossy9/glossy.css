@@ -1,0 +1,104 @@
+/*
+Glossy 1.5.1
+
+1.5.1 with styles for sorting from the right
+david@rowbory.co.uk
+*/
+body, div {
+	margin: 0px; padding: 0px; overflow: hidden; border-spacing: 0px;
+	font-family: "Andika Compact", "Andika", "Andika New Basic Compact","Andika New Basic","Charis SIL Compact", "Charis SIL", "Andika Basic", "Arial Unicode MS";
+
+}
+
+#search_tip {
+	position: absolute;
+	z-index: -10;
+	top: 0px;
+	right: 0px;
+	width: 400px;
+	font-size: 12px;
+	text-align: right;
+	padding: 6px;
+}
+
+.hm {
+	baseline-shift: super; font-size: 50%; font-weight: bold; color: blue; margin-left: 1em; top: -10px;
+}
+
+div#search { position: relative; height: 32px; }
+
+div#search input {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+div#search, div#search input {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	font-size: 18pt;
+	background: rgba(255,255,255,0.5);
+}
+div#search input {
+	border: white 2px solid;
+}
+div#lexicon {
+	overflow-y: scroll; height: 100%;
+}
+table.tablesorter {
+	width: 100%; margin: 0px; padding: 0px; border-spacing: 0px;
+}
+
+table.tablesorter tbody tr td, #search, #search input {
+}
+
+table.tablesorter tbody tr td {
+	font-size: 12pt;
+
+}
+
+table.tablesorter tr td {
+	width: 50%;
+	font-family: "Andika Compact", "Andika", "Andika New Basic Compact","Andika New Basic","Charis SIL Compact", "Charis SIL", "Andika Basic", "Arial Unicode MS";
+}
+
+table.tablesorter thead td { max-height: 44px; }
+
+table.tablesorter thead input {
+	left: 0px; position: relative;
+}
+table.tablesorter thead input {
+	z-index: 10;
+}
+
+table.tablesorter thead .behind_search {
+	z-index: 0; color: white; display: none;
+}
+
+table.tablesorter thead tr th, table.tablesorter thead input, table.tablesorter thead .behind_search {
+	text-align: center;
+	font-family: "Andika", "Andika Basic", "Tahoma", "Arial Unicode MS";
+	font-size: 12pt;
+}
+table.tablesorter thead td { margin: auto; text-align: center; }
+table.tablesorter thead input { width: 99%; opacity: 0.2; border: none; background: white; margin: auto; text-align: center; }
+table.tablesorter thead input:hover, table.tablesorter thead input.active { opacity: 1; }
+table.tablesorter, table.tablesorter tbody, table.tablesorter tbody tr td { border-spacing: 0px; }
+table.tablesorter tr td { border: 0px white solid; border-bottom: 1px gray solid; background-color: #eef; }
+.tablesorter td:hover { color: blue; text-decoration: underline; cursor: pointer; }
+.highlight { color: red; background-color: #ff9; }
+table.tablesorter tr td.v { background-color: white; color: black; font-size: 14pt; }
+
+body.sort_right div#search input {
+	border-color: red;
+	color: #900;
+	background: rgba(255,210,210,0.5);
+	cursor: help;
+}
+
+body.sort_right table.tablesorter tbody td.v {
+	text-align: right; padding-right: 6px;
+}

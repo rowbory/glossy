@@ -1,0 +1,4383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="glossy.xsl"?><!-- Added for transformation 2012-04-22--><Lexicon>
+  <Language>Yandang</Language>
+  <FontName>Charis SIL</FontName>
+  <FontSize>14</FontSize>
+  <Entries>
+    <item>
+      <Lexeme Type="Word" Form="hɛrɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="YGWcjU2E">
+          <Gloss Language="English">beg</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mini" Homograph="1" />
+      <Entry>
+        <Sense Id="AN2BtK0P">
+          <Gloss Language="English">his</Gloss>
+        </Sense>
+        <Sense Id="OOdjKKjc">
+          <Gloss Language="English">his/her</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="aya" Homograph="1" />
+      <Entry>
+        <Sense Id="V05gKSL6">
+          <Gloss Language="English">at inside</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ngatɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="hZROGZ9Q">
+          <Gloss Language="English">said</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="a" Homograph="1" />
+      <Entry>
+        <Sense Id="gtmo2dLV">
+          <Gloss Language="English">that</Gloss>
+        </Sense>
+        <Sense Id="PLGNhBp3">
+          <Gloss Language="English">at</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="bũneɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="ETD68e3I">
+          <Gloss Language="English">sufering</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Stem" Form="ɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="RmwVQkSs">
+          <Gloss Language="English">call</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lakɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="2ec1Uqdg">
+          <Gloss Language="English">heard</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyang" Homograph="1" />
+      <Entry>
+        <Sense Id="VEDSfV9H">
+          <Gloss Language="English">my mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ye" Homograph="1" />
+      <Entry>
+        <Sense Id="7soeaaYR">
+          <Gloss Language="English">be</Gloss>
+        </Sense>
+        <Sense Id="GUm5Y0oq">
+          <Gloss Language="English">talk</Gloss>
+        </Sense>
+        <Sense Id="BwHlb27G">
+          <Gloss Language="English">reason</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yá" Homograph="1" />
+      <Entry>
+        <Sense Id="UtYsgsYr">
+          <Gloss Language="English">inside</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="huwɪrɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="o7GhIMgN">
+          <Gloss Language="English">grave</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓemɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="xS9Farhg">
+          <Gloss Language="English">call you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="nRj86oNM">
+          <Gloss Language="English">you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyahakɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="MJe01yhc">
+          <Gloss Language="English">mouth cry</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓasung" Homograph="1" />
+      <Entry>
+        <Sense Id="CF8HPXI7">
+          <Gloss Language="English">help</Gloss>
+        </Sense>
+        <Sense Id="rUb+Tt+/">
+          <Gloss Language="English">helping me</Gloss>
+        </Sense>
+        <Sense Id="DuqZlTRg">
+          <Gloss Language="English">help me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nakɓizi" Homograph="1" />
+      <Entry>
+        <Sense Id="tZNq4EOk">
+          <Gloss Language="English">hand there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛsʊngɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="i2cNUk9k">
+          <Gloss Language="English">threw me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="á" Homograph="1" />
+      <Entry>
+        <Sense Id="3UkzvEyO">
+          <Gloss Language="English">at</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̃tʊkaɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="BH55FQsa">
+          <Gloss Language="English">water deep the</Gloss>
+        </Sense>
+        <Sense Id="6F6aMRDf">
+          <Gloss Language="English">yhe water deep</Gloss>
+        </Sense>
+        <Sense Id="G4ttPBks">
+          <Gloss Language="English">the water deep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔgutaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="DgL4q/9R">
+          <Gloss Language="English">the eye deep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̃ɓɪ̄" Homograph="1" />
+      <Entry>
+        <Sense Id="PXiKX5P1">
+          <Gloss Language="English">the water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kùráng" Homograph="1" />
+      <Entry>
+        <Sense Id="vkEO8gp/">
+          <Gloss Language="English">covered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="úng" Homograph="1" />
+      <Entry>
+        <Sense Id="0nkkyO8l">
+          <Gloss Language="English">my head</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="susung" Homograph="1" />
+      <Entry>
+        <Sense Id="rEvpz7wF">
+          <Gloss Language="English">burried me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gãtɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="yI2O8jFR">
+          <Gloss Language="English">said</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="3F+hzWLu">
+          <Gloss Language="English">that</Gloss>
+        </Sense>
+        <Sense Id="3XQuEQE3">
+          <Gloss Language="English">you</Gloss>
+        </Sense>
+        <Sense Id="UlelDBm4">
+          <Gloss Language="English">gave</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛsuungɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="sDLii+JI">
+          <Gloss Language="English">threw me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="adãng" Homograph="1" />
+      <Entry>
+        <Sense Id="vQNDQJpO">
+          <Gloss Language="English">at out</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɪ́ɪkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="iu0dp1uS">
+          <Gloss Language="English">see</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wàazankaɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="8N7qWioI">
+          <Gloss Language="English">direction up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gbing" Homograph="1" />
+      <Entry>
+        <Sense Id="iqcHJe3a">
+          <Gloss Language="English">again</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zakare" Homograph="1" />
+      <Entry>
+        <Sense Id="MHH3noDr">
+          <Gloss Language="English">up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="guta" Homograph="1" />
+      <Entry>
+        <Sense Id="GU0Zzwgm">
+          <Gloss Language="English">deep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̃ɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Oqlv3uRa">
+          <Gloss Language="English">the water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kurang" Homograph="1" />
+      <Entry>
+        <Sense Id="zXHiQAkz">
+          <Gloss Language="English">covered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wáase" Homograph="1" />
+      <Entry>
+        <Sense Id="EFIthlBm">
+          <Gloss Language="English">direction down</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dʊ̃" Homograph="1" />
+      <Entry>
+        <Sense Id="MO1ftjMX">
+          <Gloss Language="English">botom</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tatɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="+5CIAbKy">
+          <Gloss Language="English">stones</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yawɪtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="leYeLqOq">
+          <Gloss Language="English">deads</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="amma" Homograph="1" />
+      <Entry>
+        <Sense Id="li23gUNc">
+          <Gloss Language="English">but</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="neerang" Homograph="1" />
+      <Entry>
+        <Sense Id="KD0rZ0PH">
+          <Gloss Language="English">snatched me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yalà" Homograph="1" />
+      <Entry>
+        <Sense Id="Dd9ITXAE">
+          <Gloss Language="English">inside mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yawɪrɪɓɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="zn8825R0">
+          <Gloss Language="English">daeth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔsarang" Homograph="1" />
+      <Entry>
+        <Sense Id="ZYZiwumN">
+          <Gloss Language="English">my heart</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yela" Homograph="1" />
+      <Entry>
+        <Sense Id="z6JgvqbS">
+          <Gloss Language="English">trying</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kiiki" Homograph="1" />
+      <Entry>
+        <Sense Id="oCbn6UuH">
+          <Gloss Language="English">go out</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nekɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="gRSf9Q5h">
+          <Gloss Language="English">like this</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nosi" Homograph="1" />
+      <Entry>
+        <Sense Id="mmT1NxUl">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="F6L2lAGB">
+          <Gloss Language="English">remember</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yang" Homograph="1" />
+      <Entry>
+        <Sense Id="cxq/hqGg">
+          <Gloss Language="English">my stomach</Gloss>
+        </Sense>
+        <Sense Id="V0dCLIB0">
+          <Gloss Language="English">question</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ii" Homograph="1" />
+      <Entry>
+        <Sense Id="Vz2vg3GD">
+          <Gloss Language="English">body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛiraɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="InJKY2wp">
+          <Gloss Language="English">the beging</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yawaa" Homograph="1" />
+      <Entry>
+        <Sense Id="70rKterM">
+          <Gloss Language="English">inside room</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zankaɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="pqHuW8jV">
+          <Gloss Language="English">the reading</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪ̃nɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="ooBRScpA">
+          <Gloss Language="English">people</Gloss>
+        </Sense>
+        <Sense Id="c7Dih4vB">
+          <Gloss Language="English">people of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpãkɪmɔkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="Q3jx4NEu">
+          <Gloss Language="English">following you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lesi" Homograph="1" />
+      <Entry>
+        <Sense Id="5UvbZHlH">
+          <Gloss Language="English">leave</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ireng" Homograph="1" />
+      <Entry>
+        <Sense Id="lxCWfzoc">
+          <Gloss Language="English">their</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="96jRT4/M">
+          <Gloss Language="English">things</Gloss>
+        </Sense>
+        <Sense Id="d6gLQXbP">
+          <Gloss Language="English">thing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="laa" Homograph="1" />
+      <Entry>
+        <Sense Id="N5vWmnPo">
+          <Gloss Language="English">going</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="maakereng" Homograph="1" />
+      <Entry>
+        <Sense Id="5SpfLfLw">
+          <Gloss Language="English">building them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̄" Homograph="1" />
+      <Entry>
+        <Sense Id="8+xTKLnk">
+          <Gloss Language="English">future</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̄k" Homograph="1" />
+      <Entry>
+        <Sense Id="gb3q0nbm">
+          <Gloss Language="English">me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kam" Homograph="1" />
+      <Entry>
+        <Sense Id="hbKk0nO8">
+          <Gloss Language="English">certain</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="nxlrBGp2">
+          <Gloss Language="English">praise</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="y/UVEMjv">
+          <Gloss Language="English">with</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="manyeɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="WiCSGjPn">
+          <Gloss Language="English">my song</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊngtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="c/oWR121">
+          <Gloss Language="English">sworn</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpãkɪyɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="uBRJ1tfW">
+          <Gloss Language="English">follow them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zakara" Homograph="1" />
+      <Entry>
+        <Sense Id="qLF5Kc+S">
+          <Gloss Language="English">up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="â" Homograph="1" />
+      <Entry>
+        <Sense Id="NpJN6iqu">
+          <Gloss Language="English">him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="rmfF7gN3">
+          <Gloss Language="English">alone</Gloss>
+        </Sense>
+        <Sense Id="/ZCzJLsS">
+          <Gloss Language="English">or</Gloss>
+        </Sense>
+        <Sense Id="6zw8Ydgh">
+          <Gloss Language="English">every</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓantɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Frd3jhkv">
+          <Gloss Language="English">only</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="neeki" Homograph="1" />
+      <Entry>
+        <Sense Id="boD6DtcV">
+          <Gloss Language="English">snatch</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="Ryxmwn65">
+          <Gloss Language="English">me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaa" Homograph="1" />
+      <Entry>
+        <Sense Id="/SJ6FxXk">
+          <Gloss Language="English">told</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="à" Homograph="1" />
+      <Entry>
+        <Sense Id="dOLnFqd2">
+          <Gloss Language="English">that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="4eT7g+D7">
+          <Gloss Language="English">it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zensi" Homograph="1" />
+      <Entry>
+        <Sense Id="G7rvzfNV">
+          <Gloss Language="English">vomit</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dãng" Homograph="1" />
+      <Entry>
+        <Sense Id="c02FovgI">
+          <Gloss Language="English">out</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyageng" Homograph="1" />
+      <Entry>
+        <Sense Id="u4T68m7A">
+          <Gloss Language="English">edge</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kponi" Homograph="1" />
+      <Entry>
+        <Sense Id="iq4FZyWR">
+          <Gloss Language="English">hairs</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛtʊkaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="T3HySnjd">
+          <Gloss Language="English">water deep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lankɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="wwEgeK5Y">
+          <Gloss Language="English">going</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="le" Homograph="1" />
+      <Entry>
+        <Sense Id="qx0prAVh">
+          <Gloss Language="English">of</Gloss>
+        </Sense>
+        <Sense Id="YjKsH6HF">
+          <Gloss Language="English">they</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nineve" Homograph="1" />
+      <Entry>
+        <Sense Id="87AB1g7N">
+          <Gloss Language="English">Nineve</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpatɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="X7aCV+JX">
+          <Gloss Language="English">returned</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaanɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="NF/8H3oC">
+          <Gloss Language="English">told him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="langmɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="O1BfbWr/">
+          <Gloss Language="English">you go</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gbintang" Homograph="1" />
+      <Entry>
+        <Sense Id="ku4YLKRk">
+          <Gloss Language="English">big</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓeki" Homograph="1" />
+      <Entry>
+        <Sense Id="uSc7Y1y2">
+          <Gloss Language="English">calling</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaareng" Homograph="1" />
+      <Entry>
+        <Sense Id="nNWiWN2C">
+          <Gloss Language="English">tell them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nineba" Homograph="1" />
+      <Entry>
+        <Sense Id="hqjG4jc4">
+          <Gloss Language="English">nineveh</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yeyi" Homograph="1" />
+      <Entry>
+        <Sense Id="QgTk0kt6">
+          <Gloss Language="English">talks</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaatʊmɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="dLdIZFji">
+          <Gloss Language="English">told you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="v+NtyqKe">
+          <Gloss Language="English">?</Gloss>
+        </Sense>
+        <Sense Id="CdH/tLpL">
+          <Gloss Language="English">these</Gloss>
+        </Sense>
+        <Sense Id="Wnvh/FEd">
+          <Gloss Language="English">this</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊk" Homograph="1" />
+      <Entry>
+        <Sense Id="Yts+KsW0">
+          <Gloss Language="English">fear</Gloss>
+        </Sense>
+        <Sense Id="m6uNIRkk">
+          <Gloss Language="English">ran</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɪh" Homograph="1" />
+      <Entry>
+        <Sense Id="pUgWJ768">
+          <Gloss Language="English">with</Gloss>
+        </Sense>
+        <Sense Id="s2je/DOv">
+          <Gloss Language="English">it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaatinɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="wmG8ihRD">
+          <Gloss Language="English">told him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="loosi" Homograph="1" />
+      <Entry>
+        <Sense Id="lUqpomIx">
+          <Gloss Language="English">went</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="langɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="QJ0RaD9g">
+          <Gloss Language="English">going</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="la" Homograph="1" />
+      <Entry>
+        <Sense Id="Rf5Z1gTh">
+          <Gloss Language="English">to</Gloss>
+        </Sense>
+        <Sense Id="bGKgscc4">
+          <Gloss Language="English">going</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zi" Homograph="1" />
+      <Entry>
+        <Sense Id="qarKR1gb">
+          <Gloss Language="English">there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="loki" Homograph="1" />
+      <Entry>
+        <Sense Id="Bkuxl7OT">
+          <Gloss Language="English">stay</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="heik" Homograph="1" />
+      <Entry>
+        <Sense Id="C5wVn9hP">
+          <Gloss Language="English">before</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sak" Homograph="1" />
+      <Entry>
+        <Sense Id="TMLGkcMq">
+          <Gloss Language="English">arive</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="icQxZJoS">
+          <Gloss Language="English">there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tangwi" Homograph="1" />
+      <Entry>
+        <Sense Id="Ioow00xt">
+          <Gloss Language="English">the day</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="satʊnung" Homograph="1" />
+      <Entry>
+        <Sense Id="smdVzWau">
+          <Gloss Language="English">arrived</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dʊ" Homograph="1" />
+      <Entry>
+        <Sense Id="gEDzJJnH">
+          <Gloss Language="English">start</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="farɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="/Tkw+B2S">
+          <Gloss Language="English">began</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wakye" Homograph="1" />
+      <Entry>
+        <Sense Id="Gmm8DA4x">
+          <Gloss Language="English">preached</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓasikɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="DFuYtua8">
+          <Gloss Language="English">remain only</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="minini" Homograph="1" />
+      <Entry>
+        <Sense Id="CLX9VPV0">
+          <Gloss Language="English">twenty x two</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ninebaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="jmqH956j">
+          <Gloss Language="English">the nineveh</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="salang" Homograph="1" />
+      <Entry>
+        <Sense Id="XZJyaprN">
+          <Gloss Language="English">scarter</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔsareng" Homograph="1" />
+      <Entry>
+        <Sense Id="09Qay70u">
+          <Gloss Language="English">their hearts</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓasang" Homograph="1" />
+      <Entry>
+        <Sense Id="NjQtUbTl">
+          <Gloss Language="English">agreed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyareng" Homograph="1" />
+      <Entry>
+        <Sense Id="Ouw8Ufje">
+          <Gloss Language="English">their mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sĩ́i" Homograph="1" />
+      <Entry>
+        <Sense Id="qE0tEvlh">
+          <Gloss Language="English">refused</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="henmɔkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="L0IhbJPi">
+          <Gloss Language="English">things eating</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rɔkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="1tF4Ghq0">
+          <Gloss Language="English">that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="pat" Homograph="1" />
+      <Entry>
+        <Sense Id="OTzCKgiO">
+          <Gloss Language="English">all</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zuli" Homograph="1" />
+      <Entry>
+        <Sense Id="Yh45GjzO">
+          <Gloss Language="English">wore</Gloss>
+        </Sense>
+        <Sense Id="oP0ym2Cj">
+          <Gloss Language="English">dressed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="seng" Homograph="1" />
+      <Entry>
+        <Sense Id="shqTFw7W">
+          <Gloss Language="English">tattered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="heng" Homograph="1" />
+      <Entry>
+        <Sense Id="wD6sJoRl">
+          <Gloss Language="English">things</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="irɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="nYEK99bn">
+          <Gloss Language="English">their bodies</Gloss>
+        </Sense>
+        <Sense Id="tZh1K+rm">
+          <Gloss Language="English">their own</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpang" Homograph="1" />
+      <Entry>
+        <Sense Id="vzObiQlp">
+          <Gloss Language="English">king</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="isi" Homograph="1" />
+      <Entry>
+        <Sense Id="3NJHSKy6">
+          <Gloss Language="English">got up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="u" Homograph="1" />
+      <Entry>
+        <Sense Id="ei0rdB1X">
+          <Gloss Language="English">head</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="waye" Homograph="1" />
+      <Entry>
+        <Sense Id="xcAHggTC">
+          <Gloss Language="English">spoke</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpangwɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="/ybx+Jt1">
+          <Gloss Language="English">the king</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gãsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="yjfiaeTJ">
+          <Gloss Language="English">said</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gũtikɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="Ky+yQ+dM">
+          <Gloss Language="English">most</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ung" Homograph="1" />
+      <Entry>
+        <Sense Id="8gkcZ414">
+          <Gloss Language="English">any</Gloss>
+        </Sense>
+        <Sense Id="DYadCj/0">
+          <Gloss Language="English">certain</Gloss>
+        </Sense>
+        <Sense Id="Vaj0oXXI">
+          <Gloss Language="English">my head</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪng" Homograph="1" />
+      <Entry>
+        <Sense Id="EJLUiI+B">
+          <Gloss Language="English">person</Gloss>
+        </Sense>
+        <Sense Id="IyhRPpPX">
+          <Gloss Language="English">person of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mʊ̀k" Homograph="1" />
+      <Entry>
+        <Sense Id="PLWLZ5Fk">
+          <Gloss Language="English">eat</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yũka" Homograph="1" />
+      <Entry>
+        <Sense Id="bIfg0mip">
+          <Gloss Language="English">drink</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpone" Homograph="1" />
+      <Entry>
+        <Sense Id="ylt7vQ7a">
+          <Gloss Language="English">hair</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Pz94l4it">
+          <Gloss Language="English">cows</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓiyi" Homograph="1" />
+      <Entry>
+        <Sense Id="WzBHMUA9">
+          <Gloss Language="English">goats</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dããyi" Homograph="1" />
+      <Entry>
+        <Sense Id="UK8ko1Zk">
+          <Gloss Language="English">sheep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔi" Homograph="1" />
+      <Entry>
+        <Sense Id="8TPmvplP">
+          <Gloss Language="English">give them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ̃a" Homograph="1" />
+      <Entry>
+        <Sense Id="gbpQoQJE">
+          <Gloss Language="English">water not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="M4uN+jHx">
+          <Gloss Language="English">then</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="musang" Homograph="1" />
+      <Entry>
+        <Sense Id="6x/JOO2+">
+          <Gloss Language="English">mixed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓontong" Homograph="1" />
+      <Entry>
+        <Sense Id="RzPiSfpD">
+          <Gloss Language="English">all</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyahakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="XKL7suC6">
+          <Gloss Language="English">mouth crying </Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="íirɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="CHScmKk/">
+          <Gloss Language="English">their body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪngwa" Homograph="1" />
+      <Entry>
+        <Sense Id="NmZC5gbJ">
+          <Gloss Language="English">a person</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓiti" Homograph="1" />
+      <Entry>
+        <Sense Id="FLL9/jgg">
+          <Gloss Language="English">?</Gloss>
+        </Sense>
+        <Sense Id="A7o5i/6p">
+          <Gloss Language="English">which</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛri" Homograph="1" />
+      <Entry>
+        <Sense Id="p6wlNQMa">
+          <Gloss Language="English">beg</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔsaa" Homograph="1" />
+      <Entry>
+        <Sense Id="MyW5eAYt">
+          <Gloss Language="English">heat of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hutiɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Gg4Oq/Me">
+          <Gloss Language="English">white</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɛɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="+jXQMBpC">
+          <Gloss Language="English">leave</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="aksana" Homograph="1" />
+      <Entry>
+        <Sense Id="8UifOEZw">
+          <Gloss Language="English">bad</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="antaɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="mHeURMKW">
+          <Gloss Language="English">doing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="makolaza" Homograph="1" />
+      <Entry>
+        <Sense Id="V37OvkVX">
+          <Gloss Language="English">probably</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyarʊk" Homograph="1" />
+      <Entry>
+        <Sense Id="8/jGZnu6">
+          <Gloss Language="English">our mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaa" Homograph="1" />
+      <Entry>
+        <Sense Id="J9wjyY15">
+          <Gloss Language="English">stomach</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hutaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="HhEQ+/J9">
+          <Gloss Language="English">fuming</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zesi" Homograph="1" />
+      <Entry>
+        <Sense Id="3YHS0LsZ">
+          <Gloss Language="English">colaps</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nà" Homograph="1" />
+      <Entry>
+        <Sense Id="I6vQR7Vh">
+          <Gloss Language="English">not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ikarʊka" Homograph="1" />
+      <Entry>
+        <Sense Id="QrbQ+8E0">
+          <Gloss Language="English">kill us not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɪɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="5BC2ybco">
+          <Gloss Language="English">saw</Gloss>
+        </Sense>
+        <Sense Id="xS9je16x">
+          <Gloss Language="English">see</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="angse" Homograph="1" />
+      <Entry>
+        <Sense Id="pWcHXy5A">
+          <Gloss Language="English">did</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nukɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="ubMp6Epx">
+          <Gloss Language="English">manner</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɛtʊnung" Homograph="1" />
+      <Entry>
+        <Sense Id="8u0xneky">
+          <Gloss Language="English">left</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔzʊye" Homograph="1" />
+      <Entry>
+        <Sense Id="VzrZJBBL">
+          <Gloss Language="English">sin</Gloss>
+        </Sense>
+        <Sense Id="3bLou+Ed">
+          <Gloss Language="English">sins</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zinɔsaanɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="FZ6KlRDP">
+          <Gloss Language="English">press his heart</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyangsana" Homograph="1" />
+      <Entry>
+        <Sense Id="VzScbeQ+">
+          <Gloss Language="English">spoil</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yɛlɛrengma" Homograph="1" />
+      <Entry>
+        <Sense Id="ub7+xTRo">
+          <Gloss Language="English">their talk</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hulsi" Homograph="1" />
+      <Entry>
+        <Sense Id="LotITjmV">
+          <Gloss Language="English">fumed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="uu" Homograph="1" />
+      <Entry>
+        <Sense Id="KZKWLWTd">
+          <Gloss Language="English">head</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="9ZBMSrL4">
+          <Gloss Language="English">those</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ruɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Go0tAkXk">
+          <Gloss Language="English">lord/God</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ansikɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="U2cYZR+U">
+          <Gloss Language="English">did that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gatɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="nCSYKx8Y">
+          <Gloss Language="English">said</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yeng" Homograph="1" />
+      <Entry>
+        <Sense Id="CpjebB1G">
+          <Gloss Language="English">mother</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="waazakare" Homograph="1" />
+      <Entry>
+        <Sense Id="UaiPRiz2">
+          <Gloss Language="English">direction up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ziti" Homograph="1" />
+      <Entry>
+        <Sense Id="Fl7OiycG">
+          <Gloss Language="English">yesterday</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ngasizi" Homograph="1" />
+      <Entry>
+        <Sense Id="skiorJ7x">
+          <Gloss Language="English">said there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓè" Homograph="1" />
+      <Entry>
+        <Sense Id="6SDeqyNf">
+          <Gloss Language="English">when</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dʊʊ" Homograph="1" />
+      <Entry>
+        <Sense Id="ZPJzOObZ">
+          <Gloss Language="English">still</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lee" Homograph="1" />
+      <Entry>
+        <Sense Id="iXO/JWXP">
+          <Gloss Language="English">house</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="winɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="LQAR3YJz">
+          <Gloss Language="English">people</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔɔtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="xIxVcSTm">
+          <Gloss Language="English">put</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tasi" Homograph="1" />
+      <Entry>
+        <Sense Id="UqGiZov4">
+          <Gloss Language="English">tarshis</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓeɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Mj7pj3cD">
+          <Gloss Language="English">place</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sʊngtʊng" Homograph="1" />
+      <Entry>
+        <Sense Id="X4tMtO+a">
+          <Gloss Language="English">sent me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zea" Homograph="1" />
+      <Entry>
+        <Sense Id="qhDsc91B">
+          <Gloss Language="English">there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dingtɪɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="mGMqCFnQ">
+          <Gloss Language="English">know it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="fɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="6v4s/hcu">
+          <Gloss Language="English">poverty</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪnɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="JQbNNc9a">
+          <Gloss Language="English">people</Gloss>
+        </Sense>
+        <Sense Id="+KWzEIaY">
+          <Gloss Language="English">people of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gbaaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="GAzfqKy6">
+          <Gloss Language="English">much</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Dqq3JQPA">
+          <Gloss Language="English">your stomach</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="huta" Homograph="1" />
+      <Entry>
+        <Sense Id="m7+gWYZf">
+          <Gloss Language="English">fum</Gloss>
+        </Sense>
+        <Sense Id="YxzO0IJy">
+          <Gloss Language="English">fume</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="no" Homograph="1" />
+      <Entry>
+        <Sense Id="ypL2jkAK">
+          <Gloss Language="English">just</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nanareka" Homograph="1" />
+      <Entry>
+        <Sense Id="kRGx5X9K">
+          <Gloss Language="English">carelesly</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yelsi" Homograph="1" />
+      <Entry>
+        <Sense Id="Uc6dI0wI">
+          <Gloss Language="English">love</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tɔɔra" Homograph="1" />
+      <Entry>
+        <Sense Id="shXfBwoX">
+          <Gloss Language="English">suffer</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="naane" Homograph="1" />
+      <Entry>
+        <Sense Id="SuOpdf2J">
+          <Gloss Language="English">free</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iiki" Homograph="1" />
+      <Entry>
+        <Sense Id="tWEtgr68">
+          <Gloss Language="English">kill</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛk" Homograph="1" />
+      <Entry>
+        <Sense Id="YlwYra+s">
+          <Gloss Language="English">me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hansungɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="6fHJPJru">
+          <Gloss Language="English">beautifull</Gloss>
+        </Sense>
+        <Sense Id="NmGi6dDt">
+          <Gloss Language="English">beautifull for me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɔkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Ksc38YmU">
+          <Gloss Language="English">seat</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dang" Homograph="1" />
+      <Entry>
+        <Sense Id="HM0n+Uz7">
+          <Gloss Language="English">out</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="W2ZHoyn5">
+          <Gloss Language="English">alive</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpesini" Homograph="1" />
+      <Entry>
+        <Sense Id="lFyvOuLY">
+          <Gloss Language="English">answered him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hantiɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="BJehxdl/">
+          <Gloss Language="English">good</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="7CmSRWM1">
+          <Gloss Language="English">your stomach</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="huti" Homograph="1" />
+      <Entry>
+        <Sense Id="IhXVT4Lw">
+          <Gloss Language="English">fum</Gloss>
+        </Sense>
+        <Sense Id="z+JR96pS">
+          <Gloss Language="English">fume</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kii" Homograph="1" />
+      <Entry>
+        <Sense Id="JnNCFTqv">
+          <Gloss Language="English">go out</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="ghJah7S8">
+          <Gloss Language="English">the city</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="DfWje18L">
+          <Gloss Language="English">ascent</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kãrɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="HcOVk7GE">
+          <Gloss Language="English">side</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="uli" Homograph="1" />
+      <Entry>
+        <Sense Id="MRU98CKe">
+          <Gloss Language="English">east</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lang" Homograph="1" />
+      <Entry>
+        <Sense Id="RbcJ5bUo">
+          <Gloss Language="English">go/went</Gloss>
+        </Sense>
+        <Sense Id="xI6Rst7U">
+          <Gloss Language="English">went</Gloss>
+        </Sense>
+        <Sense Id="1CGu5Ihq">
+          <Gloss Language="English">go</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="losizi" Homograph="1" />
+      <Entry>
+        <Sense Id="zeIxRtzS">
+          <Gloss Language="English">sat there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hãlɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="mqfMHhwh">
+          <Gloss Language="English">repair</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kuraɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="wU4ScBs7">
+          <Gloss Language="English">tent</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lok" Homograph="1" />
+      <Entry>
+        <Sense Id="O02XLzj0">
+          <Gloss Language="English">sat</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zukalow" Homograph="1" />
+      <Entry>
+        <Sense Id="xH0so1/M">
+          <Gloss Language="English">shade of it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="ktDp3Qwv">
+          <Gloss Language="English">place</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="makɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Q3+2QLgf">
+          <Gloss Language="English">waiting</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="anta" Homograph="1" />
+      <Entry>
+        <Sense Id="jTz2IlTv">
+          <Gloss Language="English">do</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔsi" Homograph="1" />
+      <Entry>
+        <Sense Id="Xto6qEKf">
+          <Gloss Language="English">put</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="mKF3pd1c">
+          <Gloss Language="English">it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sotere" Homograph="1" />
+      <Entry>
+        <Sense Id="NulrzFzk">
+          <Gloss Language="English">germinate</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓɛɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="IxYkUKPE">
+          <Gloss Language="English">place</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yezike" Homograph="1" />
+      <Entry>
+        <Sense Id="Pv9FXWyI">
+          <Gloss Language="English">be there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔzuka" Homograph="1" />
+      <Entry>
+        <Sense Id="+kYN4DZn">
+          <Gloss Language="English">shade</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iini" Homograph="1" />
+      <Entry>
+        <Sense Id="xUHs50FS">
+          <Gloss Language="English">his body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tãng" Homograph="1" />
+      <Entry>
+        <Sense Id="U+dBLEg+">
+          <Gloss Language="English">sweet</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="ddl5PFwx">
+          <Gloss Language="English">eye</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zukaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="j0lxtIDu">
+          <Gloss Language="English">shade</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛrɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="hKH7RRi6">
+          <Gloss Language="English">morning</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lésí" Homograph="1" />
+      <Entry>
+        <Sense Id="0MXoZ8OT">
+          <Gloss Language="English">brake</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sʊntɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="x6yR6mTS">
+          <Gloss Language="English">sent</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔɔɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="dDkGJXdz">
+          <Gloss Language="English">a womb</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛtɛɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="MNnUZ5h+">
+          <Gloss Language="English">it came</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mʊ̀si" Homograph="1" />
+      <Entry>
+        <Sense Id="DIFAU7rM">
+          <Gloss Language="English">ate</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tikɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="ITkCCtEa">
+          <Gloss Language="English">the vine</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊʊrisi" Homograph="1" />
+      <Entry>
+        <Sense Id="YT3k0OwB">
+          <Gloss Language="English">dried</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rubi" Homograph="1" />
+      <Entry>
+        <Sense Id="KZJfi40c">
+          <Gloss Language="English">sun</Gloss>
+        </Sense>
+        <Sense Id="jSijaFug">
+          <Gloss Language="English">Lord</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yoosere" Homograph="1" />
+      <Entry>
+        <Sense Id="yZ6KK2/l">
+          <Gloss Language="English">grew</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zaka" Homograph="1" />
+      <Entry>
+        <Sense Id="HRcQ7Vgb">
+          <Gloss Language="English">up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓaɓalak" Homograph="1" />
+      <Entry>
+        <Sense Id="7yNFzz6J">
+          <Gloss Language="English">hut</Gloss>
+        </Sense>
+        <Sense Id="Zm2q/kOh">
+          <Gloss Language="English">hurt</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Qgapr98D">
+          <Gloss Language="English">wind</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kãrɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="OO4ikbo4">
+          <Gloss Language="English">side</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="uliɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="ZQN4einq">
+          <Gloss Language="English">east</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓeɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="5acPgMmZ">
+          <Gloss Language="English">the place</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wãsi" Homograph="1" />
+      <Entry>
+        <Sense Id="TFKQ+Gms">
+          <Gloss Language="English">became hurt</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wisa" Homograph="1" />
+      <Entry>
+        <Sense Id="9mbdCTN0">
+          <Gloss Language="English">die</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpesi" Homograph="1" />
+      <Entry>
+        <Sense Id="MY6YsrHT">
+          <Gloss Language="English">answered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yahutaɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="FN/GM1nY">
+          <Gloss Language="English">stomach fume</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="langla" Homograph="1" />
+      <Entry>
+        <Sense Id="5AT//V8T">
+          <Gloss Language="English">go later</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iknung" Homograph="1" />
+      <Entry>
+        <Sense Id="P2E9XgJd">
+          <Gloss Language="English">kill him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊngkʊ" Homograph="1" />
+      <Entry>
+        <Sense Id="5yU6SXKx">
+          <Gloss Language="English">pain</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔɔya" Homograph="1" />
+      <Entry>
+        <Sense Id="uvVoovBo">
+          <Gloss Language="English">you not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊtʊwa" Homograph="1" />
+      <Entry>
+        <Sense Id="6LIWWfOG">
+          <Gloss Language="English">planted it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yosʊɓɔka" Homograph="1" />
+      <Entry>
+        <Sense Id="FWnWQTM6">
+          <Gloss Language="English">made it grow</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yotikɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="/6KHOZm/">
+          <Gloss Language="English">grew</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tangwɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="GskaC/pz">
+          <Gloss Language="English">a day</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓinti" Homograph="1" />
+      <Entry>
+        <Sense Id="f5cRhINC">
+          <Gloss Language="English">one</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ninebe" Homograph="1" />
+      <Entry>
+        <Sense Id="zJxlpXIj">
+          <Gloss Language="English">nineveh</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓuri" Homograph="1" />
+      <Entry>
+        <Sense Id="lsNlO08K">
+          <Gloss Language="English">pass</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="min" Homograph="1" />
+      <Entry>
+        <Sense Id="/UtHkM5A">
+          <Gloss Language="English">twenty</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊp" Homograph="1" />
+      <Entry>
+        <Sense Id="TCbsMUOx">
+          <Gloss Language="English">ten</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ra" Homograph="1" />
+      <Entry>
+        <Sense Id="cVPGPUFT">
+          <Gloss Language="English">times</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ginang" Homograph="1" />
+      <Entry>
+        <Sense Id="7beV5XiZ">
+          <Gloss Language="English">five</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gatinti" Homograph="1" />
+      <Entry>
+        <Sense Id="SM789T2w">
+          <Gloss Language="English">six</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dingsi" Homograph="1" />
+      <Entry>
+        <Sense Id="/gQ6Huuu">
+          <Gloss Language="English">know</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="uurengma" Homograph="1" />
+      <Entry>
+        <Sense Id="HDIcCot5">
+          <Gloss Language="English">their head not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gʊ̃tɪkɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="gusHW8S3">
+          <Gloss Language="English">mandetory</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="fɔɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="XQ6Ti9O/">
+          <Gloss Language="English">poverty</Gloss>
+        </Sense>
+        <Sense Id="XAO72rLc">
+          <Gloss Language="English">pity</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lereng" Homograph="1" />
+      <Entry>
+        <Sense Id="QUdxo03y">
+          <Gloss Language="English">of them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaati" Homograph="1" />
+      <Entry>
+        <Sense Id="nLg3C1Ca">
+          <Gloss Language="English">told</Gloss>
+        </Sense>
+        <Sense Id="BY2Qjxh/">
+          <Gloss Language="English">tell pst</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dinla" Homograph="1" />
+      <Entry>
+        <Sense Id="ZdqSjfZ4">
+          <Gloss Language="English">son of</Gloss>
+        </Sense>
+        <Sense Id="N/vH9DnU">
+          <Gloss Language="English">son of/young man</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="amita" Homograph="1" />
+      <Entry>
+        <Sense Id="FqHOu8Mq">
+          <Gloss Language="English">Amittai</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ruɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="zcFeIndy">
+          <Gloss Language="English">the God</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛsi" Homograph="1" />
+      <Entry>
+        <Sense Id="NrrY/HDy">
+          <Gloss Language="English">came</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zinsiko" Homograph="1" />
+      <Entry>
+        <Sense Id="s4w2pUgb">
+          <Gloss Language="English">decended</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛik" Homograph="1" />
+      <Entry>
+        <Sense Id="M7XFqBcJ">
+          <Gloss Language="English">before</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaani" Homograph="1" />
+      <Entry>
+        <Sense Id="y9+sHL+t">
+          <Gloss Language="English">told him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="roka" Homograph="1" />
+      <Entry>
+        <Sense Id="xEw6/E4c">
+          <Gloss Language="English">that</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="isumu" Homograph="1" />
+      <Entry>
+        <Sense Id="pAm33pn3">
+          <Gloss Language="English">get up</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ireɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="lWKhco3+">
+          <Gloss Language="English">their body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iirɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="cjlf56Iv">
+          <Gloss Language="English">their body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="antaɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="S91dF+4C">
+          <Gloss Language="English">doing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="na" Homograph="1" />
+      <Entry>
+        <Sense Id="7Hxcorf8">
+          <Gloss Language="English">instate</Gloss>
+        </Sense>
+        <Sense Id="++q2qtHJ">
+          <Gloss Language="English">not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="losiɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="AF22i/Mr">
+          <Gloss Language="English">go at once</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="huu" Homograph="1" />
+      <Entry>
+        <Sense Id="DErGp1D0">
+          <Gloss Language="English">face</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yafa" Homograph="1" />
+      <Entry>
+        <Sense Id="IZIuqL11">
+          <Gloss Language="English">Joppa</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hʊw" Homograph="1" />
+      <Entry>
+        <Sense Id="EbzP238K">
+          <Gloss Language="English">get</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tɛng" Homograph="1" />
+      <Entry>
+        <Sense Id="9Nd5zck1">
+          <Gloss Language="English">stool</Gloss>
+        </Sense>
+        <Sense Id="JYIh6OnD">
+          <Gloss Language="English">stool of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Cuk4I85s">
+          <Gloss Language="English">water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tasis" Homograph="1" />
+      <Entry>
+        <Sense Id="M+WrJpkh">
+          <Gloss Language="English">tarshis</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dasi" Homograph="1" />
+      <Entry>
+        <Sense Id="wgFwRX0X">
+          <Gloss Language="English">paid</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yeki" Homograph="1" />
+      <Entry>
+        <Sense Id="3Kvhq6Z4">
+          <Gloss Language="English">price</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="langɪɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="WMcMdsdm">
+          <Gloss Language="English">going to</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="holɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="huYn+y8X">
+          <Gloss Language="English">entered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yalo" Homograph="1" />
+      <Entry>
+        <Sense Id="jXuULFX1">
+          <Gloss Language="English">it stomach</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="0CWNsVG5">
+          <Gloss Language="English">runing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛɛsi" Homograph="1" />
+      <Entry>
+        <Sense Id="t/34cR2T">
+          <Gloss Language="English">brought</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="S85YoU1Y">
+          <Gloss Language="English">wind</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="simɓeɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="JJHiRmJL">
+          <Gloss Language="English">the strenghth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛtʊkaɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="TpwXZqKI">
+          <Gloss Language="English">water deep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪngveriɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="vA2ue/iV">
+          <Gloss Language="English">masculine</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zulana" Homograph="1" />
+      <Entry>
+        <Sense Id="TW7+YdUX">
+          <Gloss Language="English">capside</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="J1DS1xm3">
+          <Gloss Language="English">the water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dokɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="5CIEUWyN">
+          <Gloss Language="English">driving</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tɛngwɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="GkC1clD+">
+          <Gloss Language="English">the stool</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊksi" Homograph="1" />
+      <Entry>
+        <Sense Id="liypSuqd">
+          <Gloss Language="English">feared</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="langne" Homograph="1" />
+      <Entry>
+        <Sense Id="BGwBgfzG">
+          <Gloss Language="English">traditions</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓasiring" Homograph="1" />
+      <Entry>
+        <Sense Id="aHFluHly">
+          <Gloss Language="English">help them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nakɓɪzi" Homograph="1" />
+      <Entry>
+        <Sense Id="tv6asFG3">
+          <Gloss Language="English">hand there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="vasɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="G/xTczEL">
+          <Gloss Language="English">packed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="misi" Homograph="1" />
+      <Entry>
+        <Sense Id="u9Khn06g">
+          <Gloss Language="English">threw</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="hk4h9UpS">
+          <Gloss Language="English">the water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="4vrn5Uxk">
+          <Gloss Language="English">reason</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓangɪɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="qQOiKyDA">
+          <Gloss Language="English">heavey</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɔlɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="50PCmItl">
+          <Gloss Language="English">entered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rʊsi" Homograph="1" />
+      <Entry>
+        <Sense Id="/F6lMVsC">
+          <Gloss Language="English">slept</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔrang" Homograph="1" />
+      <Entry>
+        <Sense Id="Mx4jmBiQ">
+          <Gloss Language="English">angle</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="delɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="VRbJt73M">
+          <Gloss Language="English">center</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪnghaa" Homograph="1" />
+      <Entry>
+        <Sense Id="aHmC0uM1">
+          <Gloss Language="English">big person of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hʊʊ" Homograph="1" />
+      <Entry>
+        <Sense Id="xlRRN+bD">
+          <Gloss Language="English">get</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hʊʊnɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="BgIzaDNC">
+          <Gloss Language="English">get him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hinsini" Homograph="1" />
+      <Entry>
+        <Sense Id="cif4oAVH">
+          <Gloss Language="English">wake him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓini" Homograph="1" />
+      <Entry>
+        <Sense Id="R4+UP6Td">
+          <Gloss Language="English">ask him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ave" Homograph="1" />
+      <Entry>
+        <Sense Id="pvn8IN2P">
+          <Gloss Language="English">what</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔɔkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="kokj1SBq">
+          <Gloss Language="English">put</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rʊkɪze" Homograph="1" />
+      <Entry>
+        <Sense Id="drvjPp6p">
+          <Gloss Language="English">sleeping</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="makɔlasa" Homograph="1" />
+      <Entry>
+        <Sense Id="oqe4vei6">
+          <Gloss Language="English">may be</Gloss>
+        </Sense>
+        <Sense Id="rn6cbZrJ">
+          <Gloss Language="English">probably</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="neeruk" Homograph="1" />
+      <Entry>
+        <Sense Id="PwV2UnNw">
+          <Gloss Language="English">snatch us</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="naak" Homograph="1" />
+      <Entry>
+        <Sense Id="qvstjCCM">
+          <Gloss Language="English">hand of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ikaruka" Homograph="1" />
+      <Entry>
+        <Sense Id="u1wxudNJ">
+          <Gloss Language="English">kill us</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hinsa" Homograph="1" />
+      <Entry>
+        <Sense Id="2B3g7R3p">
+          <Gloss Language="English">waking</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyanɔrʊɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="VCwpnCWj">
+          <Gloss Language="English">mouth of sleep</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dɔkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="UoGlmOyg">
+          <Gloss Language="English">driving</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊwyɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="1picdfn+">
+          <Gloss Language="English">grasses</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="saktʊwyɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="0sDPz6Gd">
+          <Gloss Language="English">cast lots</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dɪng" Homograph="1" />
+      <Entry>
+        <Sense Id="FZ+4/aqJ">
+          <Gloss Language="English">know</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ansi" Homograph="1" />
+      <Entry>
+        <Sense Id="+6aS6l1q">
+          <Gloss Language="English">did</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɪɛk" Homograph="1" />
+      <Entry>
+        <Sense Id="KURpaH8v">
+          <Gloss Language="English">before</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaɓɪkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="61T1wVv6">
+          <Gloss Language="English">this wind</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpela" Homograph="1" />
+      <Entry>
+        <Sense Id="erSjVSch">
+          <Gloss Language="English">distoping</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpelarʊkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="jDpfkv4T">
+          <Gloss Language="English">distoping us</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nguk" Homograph="1" />
+      <Entry>
+        <Sense Id="7avuPKLj">
+          <Gloss Language="English">catch</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="YdncPjAh">
+          <Gloss Language="English">brought</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="vXq2L3qg">
+          <Gloss Language="English">your</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɔki" Homograph="1" />
+      <Entry>
+        <Sense Id="gnGpmklv">
+          <Gloss Language="English">your</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gʊkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="aS733OvF">
+          <Gloss Language="English">working</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="avɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="+nQlUjUm">
+          <Gloss Language="English">what</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛta" Homograph="1" />
+      <Entry>
+        <Sense Id="B7QRXA7Y">
+          <Gloss Language="English">coming</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊkɓa" Homograph="1" />
+      <Entry>
+        <Sense Id="XuHTHiNO">
+          <Gloss Language="English">city</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔtarɪɓa" Homograph="1" />
+      <Entry>
+        <Sense Id="2rHr2zPP">
+          <Gloss Language="English">land</Gloss>
+        </Sense>
+        <Sense Id="HxzeLYgP">
+          <Gloss Language="English">sand</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hebiru" Homograph="1" />
+      <Entry>
+        <Sense Id="7rGkLUav">
+          <Gloss Language="English">Hebrew</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpakɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="GhIlTtjL">
+          <Gloss Language="English">following</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="halsi" Homograph="1" />
+      <Entry>
+        <Sense Id="dqUsHO5P">
+          <Gloss Language="English">repair</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛtʊke" Homograph="1" />
+      <Entry>
+        <Sense Id="tbGXGwuo">
+          <Gloss Language="English">deep waters</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔtatɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="043sPt/V">
+          <Gloss Language="English">sands</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ngù" Homograph="1" />
+      <Entry>
+        <Sense Id="aRIs7k2n">
+          <Gloss Language="English">catch</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊkɪsi" Homograph="1" />
+      <Entry>
+        <Sense Id="Ae6z0Ahl">
+          <Gloss Language="English">fear</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gaatɛrɛngɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="fkmzq4oH">
+          <Gloss Language="English">told them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔɓɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="+MeI5Gig">
+          <Gloss Language="English">though</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="m8VkoVsj">
+          <Gloss Language="English">he</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nok" Homograph="1" />
+      <Entry>
+        <Sense Id="6dlec6LJ">
+          <Gloss Language="English">claim</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Phrase" Form="yamɛɛɓi rɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="FGa9iR4R">
+          <Gloss Language="English">wind of water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yamɛɛɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="Sl7H+Wy7">
+          <Gloss Language="English">water wind</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpelarɛnkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="fpzTgXIq">
+          <Gloss Language="English">distoping them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="karʊnɔng" Homograph="1" />
+      <Entry>
+        <Sense Id="2KtEBWS8">
+          <Gloss Language="English">increasing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yabɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="9RYRR2FF">
+          <Gloss Language="English">wind</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sesì" Homograph="1" />
+      <Entry>
+        <Sense Id="h7tXDE+T">
+          <Gloss Language="English">stop</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊsʊnɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="nQX6RVPs">
+          <Gloss Language="English">cary</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔ̀k" Homograph="1" />
+      <Entry>
+        <Sense Id="c56nPwzI">
+          <Gloss Language="English">you</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="lBDl1I/S">
+          <Gloss Language="English">throw</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sēsà" Homograph="1" />
+      <Entry>
+        <Sense Id="Y9JxwGNe">
+          <Gloss Language="English">stop</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dɪ̃ntɪɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="BmPIEhbT">
+          <Gloss Language="English">know</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ang" Homograph="1" />
+      <Entry>
+        <Sense Id="2BDlJ7YI">
+          <Gloss Language="English">my</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yi" Homograph="1" />
+      <Entry>
+        <Sense Id="BFbWlbxv">
+          <Gloss Language="English">they</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hura" Homograph="1" />
+      <Entry>
+        <Sense Id="+m7R2IPM">
+          <Gloss Language="English">return</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓurereng" Homograph="1" />
+      <Entry>
+        <Sense Id="ZESbYO6G">
+          <Gloss Language="English">pass them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sɪ̄mɓɛ̄" Homograph="1" />
+      <Entry>
+        <Sense Id="/nsub40s">
+          <Gloss Language="English">strength</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hasi" Homograph="1" />
+      <Entry>
+        <Sense Id="O+5ax7OP">
+          <Gloss Language="English">cry to</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sɔkɔsɔkɔ" Homograph="1" />
+      <Entry>
+        <Sense Id="G4IqYwxV">
+          <Gloss Language="English">please</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ruk" Homograph="1" />
+      <Entry>
+        <Sense Id="0HqKYKcj">
+          <Gloss Language="English">we</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iiti" Homograph="1" />
+      <Entry>
+        <Sense Id="6c35QJ9r">
+          <Gloss Language="English">killed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪnka" Homograph="1" />
+      <Entry>
+        <Sense Id="4G5ZDaEq">
+          <Gloss Language="English">this one</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="WbjCs/ki">
+          <Gloss Language="English">carried</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛsi" Homograph="1" />
+      <Entry>
+        <Sense Id="1Z4kbv3k">
+          <Gloss Language="English">threw</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zìsì" Homograph="1" />
+      <Entry>
+        <Sense Id="ktZpd6te">
+          <Gloss Language="English">calmed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lúɓē" Homograph="1" />
+      <Entry>
+        <Sense Id="1EvGSUtR">
+          <Gloss Language="English">sudenly</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wɪ̃ɪ̃sɪ̀" Homograph="1" />
+      <Entry>
+        <Sense Id="vVhjiUxz">
+          <Gloss Language="English">slautered</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓanung" Homograph="1" />
+      <Entry>
+        <Sense Id="RH7zPC9c">
+          <Gloss Language="English">praising </Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊng" Homograph="1" />
+      <Entry>
+        <Sense Id="elv6kjBR">
+          <Gloss Language="English">swear</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ruɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="S8DzWtUc">
+          <Gloss Language="English">God only</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpãkɪɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="FVdYWp2h">
+          <Gloss Language="English">follow</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛrɪ̀" Homograph="1" />
+      <Entry>
+        <Sense Id="p/qmnYBK">
+          <Gloss Language="English">swallowed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="antɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="ASKuoumu">
+          <Gloss Language="English">epend</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lo" Homograph="1" />
+      <Entry>
+        <Sense Id="zbLnqb4v">
+          <Gloss Language="English">of it</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dààsī" Homograph="1" />
+      <Entry>
+        <Sense Id="DZt1Lw1b">
+          <Gloss Language="English">nights</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyaa" Homograph="1" />
+      <Entry>
+        <Sense Id="SnI8yk23">
+          <Gloss Language="English">mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛɛra" Homograph="1" />
+      <Entry>
+        <Sense Id="NZl/wUrb">
+          <Gloss Language="English">beging</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yona" Homograph="1" />
+      <Entry>
+        <Sense Id="LhyAy0/b">
+          <Gloss Language="English">jonah</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ya" Homograph="1" />
+      <Entry>
+        <Sense Id="Pc/9zGZl">
+          <Gloss Language="English">not</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="iZRLMtUh">
+          <Gloss Language="English">he</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="NC6viOea">
+          <Gloss Language="English">city</Gloss>
+        </Sense>
+        <Sense Id="SGV3i+Vl">
+          <Gloss Language="English">the city</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="JKEvUhVi">
+          <Gloss Language="English">they</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓɔk" Homograph="1" />
+      <Entry>
+        <Sense Id="Z70GmCzh">
+          <Gloss Language="English">your</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ka" Homograph="1" />
+      <Entry>
+        <Sense Id="BBbhl7zO">
+          <Gloss Language="English">i</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tʊk" Homograph="1" />
+      <Entry>
+        <Sense Id="5Bd9OtMw">
+          <Gloss Language="English">us</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wisi" Homograph="1" />
+      <Entry>
+        <Sense Id="ruF0kCnt">
+          <Gloss Language="English">die</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sĩĩɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="IWihDd7X">
+          <Gloss Language="English">fish</Gloss>
+        </Sense>
+        <Sense Id="Wfa9F/My">
+          <Gloss Language="English">a fish </Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tani" Homograph="1" />
+      <Entry>
+        <Sense Id="iphZUaBe">
+          <Gloss Language="English">days</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tat" Homograph="1" />
+      <Entry>
+        <Sense Id="tawNyMMV">
+          <Gloss Language="English">three</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mang" Homograph="1" />
+      <Entry>
+        <Sense Id="ZFYsIrnm">
+          <Gloss Language="English">my</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lunsi" Homograph="1" />
+      <Entry>
+        <Sense Id="V81jaiuS">
+          <Gloss Language="English">my</Gloss>
+        </Sense>
+        <Sense Id="ga+XZBql">
+          <Gloss Language="English">drawned</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zensini" Homograph="1" />
+      <Entry>
+        <Sense Id="Ea8AQrjf">
+          <Gloss Language="English">vomit him past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyagen" Homograph="1" />
+      <Entry>
+        <Sense Id="3Wki+28y">
+          <Gloss Language="English">hem of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tikɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="nHtsyb2a">
+          <Gloss Language="English">vine</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛraɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="4Al/cR80">
+          <Gloss Language="English">the begg</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɛkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="FLjGe0gW">
+          <Gloss Language="English">like this</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpelarengkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="Wf4V1l7o">
+          <Gloss Language="English">distoping them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="waase" Homograph="1" />
+      <Entry>
+        <Sense Id="USgOAkrL">
+          <Gloss Language="English">direction down</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yaalà" Homograph="1" />
+      <Entry>
+        <Sense Id="rtRiXBw8">
+          <Gloss Language="English">inside mouth of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="hlvB13JS">
+          <Gloss Language="English">?</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛɪk" Homograph="1" />
+      <Entry>
+        <Sense Id="/fMHmjIp">
+          <Gloss Language="English">before</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="duo" Homograph="1" />
+      <Entry>
+        <Sense Id="SDrFXuIS">
+          <Gloss Language="English">began</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ini" Homograph="1" />
+      <Entry>
+        <Sense Id="4eb7iah8">
+          <Gloss Language="English">two</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sĩ́ĩ́" Homograph="1" />
+      <Entry>
+        <Sense Id="7OCPuHXb">
+          <Gloss Language="English">refused</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mʊkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="ixZ/b4df">
+          <Gloss Language="English">eating</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɔyi" Homograph="1" />
+      <Entry>
+        <Sense Id="N8F1lmzO">
+          <Gloss Language="English">give them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="mɛɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="eaOH1HmP">
+          <Gloss Language="English">water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="iireng" Homograph="1" />
+      <Entry>
+        <Sense Id="r6vMVwlP">
+          <Gloss Language="English">their body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyahãkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="xWua3zAp">
+          <Gloss Language="English">mouth cry</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="makɔlaza" Homograph="1" />
+      <Entry>
+        <Sense Id="1TddSMF0">
+          <Gloss Language="English">probably/maybe</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɪɪtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="y4GVDcfb">
+          <Gloss Language="English">see pst</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔzʊ̃yɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="wX5Jtd4L">
+          <Gloss Language="English">jealosy</Gloss>
+        </Sense>
+        <Sense Id="HZYodoX5">
+          <Gloss Language="English">jealosy/sins</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɛtʊnɔng" Homograph="1" />
+      <Entry>
+        <Sense Id="0g3f6IN6">
+          <Gloss Language="English">left</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nlt" Homograph="1" />
+      <Entry>
+        <Sense Id="vzA+pp6U">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɪv" Homograph="1" />
+      <Entry>
+        <Sense Id="nK4BznnR">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gnb" Homograph="1" />
+      <Entry>
+        <Sense Id="Rf1NALru">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rsv" Homograph="1" />
+      <Entry>
+        <Sense Id="4+dmFDQO">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hausa" Homograph="1" />
+      <Entry>
+        <Sense Id="zNeu4qEg">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nkjv" Homograph="1" />
+      <Entry>
+        <Sense Id="NOOxdM7W">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ngasi" Homograph="1" />
+      <Entry>
+        <Sense Id="5g6ZXm+/">
+          <Gloss Language="English">said</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wi" Homograph="1" />
+      <Entry>
+        <Sense Id="oHHEDFn6">
+          <Gloss Language="English">him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="antaɓa" Homograph="1" />
+      <Entry>
+        <Sense Id="Evykx5By">
+          <Gloss Language="English">do</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wĩnɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="LCiN7+I7">
+          <Gloss Language="English">people of</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ing" Homograph="1" />
+      <Entry>
+        <Sense Id="QWucUYXM">
+          <Gloss Language="English">kill me</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="losi" Homograph="1" />
+      <Entry>
+        <Sense Id="JaCBRaOb">
+          <Gloss Language="English">seat past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="pDyuIe1P">
+          <Gloss Language="English">put past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tɪkɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="f66YFlDU">
+          <Gloss Language="English">vine</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊʊrɪsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="GTZGQyUJ">
+          <Gloss Language="English">dry past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ule" Homograph="1" />
+      <Entry>
+        <Sense Id="DoA6YwsZ">
+          <Gloss Language="English">eastward</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɛɛsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="/E5IKkvf">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="48HrVMYp">
+          <Gloss Language="English">bring past</Gloss>
+        </Sense>
+        <Sense Id="FVx18w3d">
+          <Gloss Language="English">come</Gloss>
+        </Sense>
+        <Sense Id="smrvSDEA">
+          <Gloss Language="English">come pt</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hʊ̃w" Homograph="1" />
+      <Entry>
+        <Sense Id="te/mcJEz">
+          <Gloss Language="English">get </Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊkɪsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="b/ywevEj">
+          <Gloss Language="English">feared</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rʊsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="+ARA70wH">
+          <Gloss Language="English">sleep past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hʊ̃wnɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="JTMw8/iF">
+          <Gloss Language="English">get him past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɔkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="3ffo3lq+">
+          <Gloss Language="English" />
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpãkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Ih0suZqZ">
+          <Gloss Language="English">following</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hãlsi" Homograph="1" />
+      <Entry>
+        <Sense Id="+GEoyPk6">
+          <Gloss Language="English">constructed</Gloss>
+        </Sense>
+        <Sense Id="0XKROFON">
+          <Gloss Language="English">constructed/repaired</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yamɛɛɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Y3lhChmP">
+          <Gloss Language="English">wind of water</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="reng" Homograph="1" />
+      <Entry>
+        <Sense Id="WtI1QgTq">
+          <Gloss Language="English">them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sesa" Homograph="1" />
+      <Entry>
+        <Sense Id="EdLYrmbG">
+          <Gloss Language="English">stop</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sɪmɓɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="U9OroxXx">
+          <Gloss Language="English">strong/strength</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hãsi" Homograph="1" />
+      <Entry>
+        <Sense Id="ZuiAaPkq">
+          <Gloss Language="English">cry to</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɔkɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="2WxOfNwW">
+          <Gloss Language="English">the seat</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gisi" Homograph="1" />
+      <Entry>
+        <Sense Id="T8gLJmAh">
+          <Gloss Language="English">untie</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zuki" Homograph="1" />
+      <Entry>
+        <Sense Id="Tihjf7AJ">
+          <Gloss Language="English">wear on the body</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpangwi" Homograph="1" />
+      <Entry>
+        <Sense Id="e5JTD1M5">
+          <Gloss Language="English">the king</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="zute" Homograph="1" />
+      <Entry>
+        <Sense Id="o+ehggFI">
+          <Gloss Language="English">wear past</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lɔsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="Z7MZTnsO">
+          <Gloss Language="English">seat complet</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="se" Homograph="1" />
+      <Entry>
+        <Sense Id="BtuTVv2b">
+          <Gloss Language="English">down</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔtatɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="2BYQo5Dd">
+          <Gloss Language="English">eye of sands</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="luɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="CVNIZCtQ">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="uBwrUto/">
+          <Gloss Language="English">sudently</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓee" Homograph="1" />
+      <Entry>
+        <Sense Id="/ovDVzhN">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="9WzPy4jg">
+          <Gloss Language="English">call</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyahãkɪɓɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="mxAyU1E/">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="ZInzSrfX">
+          <Gloss Language="English">mouth of cry</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="naakɓizi" Homograph="1" />
+      <Entry>
+        <Sense Id="yNNX0MeG">
+          <Gloss Language="English" />
+        </Sense>
+        <Sense Id="zklqoWIH">
+          <Gloss Language="English">hand there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɪɪkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="OLGW0vau">
+          <Gloss Language="English">seeing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="wingzaa" Homograph="1" />
+      <Entry>
+        <Sense Id="lb6bFsJA">
+          <Gloss Language="English">sent person</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Phrase" Form="y ona" Homograph="1" />
+      <Entry>
+        <Sense Id="ZS0+m8Bx">
+          <Gloss Language="English">Jonah</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊsɪsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="WBXBAYPQ">
+          <Gloss Language="English">feard</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gũ" Homograph="1" />
+      <Entry>
+        <Sense Id="zKUrnV6b">
+          <Gloss Language="English">catch</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kɔtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="VYaRQbjw">
+          <Gloss Language="English">put</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ansɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="YJcSzEJv">
+          <Gloss Language="English">did</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ʊsɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="BYd/dBSo">
+          <Gloss Language="English">feared</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gâ" Homograph="1" />
+      <Entry>
+        <Sense Id="kmO8/xdR">
+          <Gloss Language="English">remain</Gloss>
+        </Sense>
+        <Sense Id="16E+l4lu">
+          <Gloss Language="English">left over</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpã́ng" Homograph="1" />
+      <Entry>
+        <Sense Id="Zks6LQkZ">
+          <Gloss Language="English">repeatedly/times</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gbang" Homograph="1" />
+      <Entry>
+        <Sense Id="4M8TIJd1">
+          <Gloss Language="English">together</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lesí" Homograph="1" />
+      <Entry>
+        <Sense Id="yzQ3slXh">
+          <Gloss Language="English">leave</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpãng" Homograph="1" />
+      <Entry>
+        <Sense Id="oURFNhTW">
+          <Gloss Language="English">repeatedly/times</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sãk" Homograph="1" />
+      <Entry>
+        <Sense Id="4Y55Pd2F">
+          <Gloss Language="English">arive/get</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kʊʊreng" Homograph="1" />
+      <Entry>
+        <Sense Id="XFucLzPO">
+          <Gloss Language="English">their town</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yalsiɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="zQkKHmxz">
+          <Gloss Language="English">far away</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sungtini" Homograph="1" />
+      <Entry>
+        <Sense Id="ml9+rMl/">
+          <Gloss Language="English">sent him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓebi" Homograph="1" />
+      <Entry>
+        <Sense Id="qHuLrbiU">
+          <Gloss Language="English">the place</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyadari" Homograph="1" />
+      <Entry>
+        <Sense Id="yKOdZlUI">
+          <Gloss Language="English">road</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kpasini" Homograph="1" />
+      <Entry>
+        <Sense Id="1fucc90K">
+          <Gloss Language="English">returned him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="kaare" Homograph="1" />
+      <Entry>
+        <Sense Id="uQ24oexl">
+          <Gloss Language="English">stop from</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nyani" Homograph="1" />
+      <Entry>
+        <Sense Id="pLGhkZz/">
+          <Gloss Language="English">his mouth</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="lankɪɓi" Homograph="1" />
+      <Entry>
+        <Sense Id="hskXZzkX">
+          <Gloss Language="English">to go there</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nɔzõõ" Homograph="1" />
+      <Entry>
+        <Sense Id="FgOU3bHa">
+          <Gloss Language="English">sin</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sungtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="L4P5PFK3">
+          <Gloss Language="English">sent</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="vĩĩtɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="DQ/77Cjy">
+          <Gloss Language="English">write pst</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛngkɛ" Homograph="1" />
+      <Entry>
+        <Sense Id="yFpoft+v">
+          <Gloss Language="English">these things</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dingsina" Homograph="1" />
+      <Entry>
+        <Sense Id="+Ajh3qXz">
+          <Gloss Language="English">know him</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="dingkɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="0//QcSDF">
+          <Gloss Language="English">knowing</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="naasiɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="xd48VYAA">
+          <Gloss Language="English">showed</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="vĩĩtɪye" Homograph="1" />
+      <Entry>
+        <Sense Id="sP1YS4rY">
+          <Gloss Language="English">wrote them</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="arɪwa" Homograph="1" />
+      <Entry>
+        <Sense Id="IKJrmEGQ">
+          <Gloss Language="English">some people</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="gãsi" Homograph="1" />
+      <Entry>
+        <Sense Id="P258zUtP">
+          <Gloss Language="English">say pst</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="sayi" Homograph="1" />
+      <Entry>
+        <Sense Id="8GSbQGfp">
+          <Gloss Language="English">years</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="tɪ" Homograph="1" />
+      <Entry>
+        <Sense Id="lFgDOGzn">
+          <Gloss Language="English">and</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="rek" Homograph="1" />
+      <Entry>
+        <Sense Id="/L7AuR4P">
+          <Gloss Language="English">born</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yeso" Homograph="1" />
+      <Entry>
+        <Sense Id="7287kDy7">
+          <Gloss Language="English">Jesus</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="ɓangbang" Homograph="1" />
+      <Entry>
+        <Sense Id="CMCiC51I">
+          <Gloss Language="English">plainty</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="nasiɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="0LpgGy9D">
+          <Gloss Language="English">show pst</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="yemuu" Homograph="1" />
+      <Entry>
+        <Sense Id="c65hIs8V">
+          <Gloss Language="English">story</Gloss>
+        </Sense>
+        <Sense Id="PD22c0NJ">
+          <Gloss Language="English">story/folktell</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+    <item>
+      <Lexeme Type="Word" Form="hɛngɓe" Homograph="1" />
+      <Entry>
+        <Sense Id="npw1AJhO">
+          <Gloss Language="English">definat things</Gloss>
+        </Sense>
+      </Entry>
+    </item>
+  </Entries>
+  <Analyses>
+    <item>
+      <string>ɓe</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Stem" Form="ɓe" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+    <item>
+      <string>ɓɔnkɔɓɪ</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Stem" Form="mɛɛtʊkaɓi" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+  </Analyses>
+</Lexicon>

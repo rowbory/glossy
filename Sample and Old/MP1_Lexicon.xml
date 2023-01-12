@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="glossy.xsl"?><!-- Added for transformation 2012-04-22--><Lexicon>
+  <Language>English</Language>
+  <FontName>Charis SIL</FontName>
+  <FontSize>10</FontSize>
+  <Entries>
+    <item>
+      <Lexeme Type="Prefix" Form="g" Homograph="1" />
+      <Entry />
+    </item>
+    <item>
+      <Lexeme Type="Stem" Form="awowije" Homograph="1" />
+      <Entry />
+    </item>
+  </Entries>
+  <Analyses>
+    <item>
+      <string>gawowije</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Prefix" Form="g" Homograph="1" />
+        <Lexeme Type="Stem" Form="awowije" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+  </Analyses>
+</Lexicon>

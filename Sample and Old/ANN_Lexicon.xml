@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="glossy.xsl"?><!-- Added for transformation 2012-04-22--><Lexicon>
+  <Language>Obolo</Language>
+  <FontName>Charis SIL</FontName>
+  <FontSize>16</FontSize>
+  <Entries />
+  <Analyses>
+    <item>
+      <string>atikọ-nu</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Stem" Form="atikọ+-nu" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+    <item>
+      <string>inenikwuun̄</string>
+      <ArrayOfLexeme>
+        <Lexeme Type="Prefix" Form="i" Homograph="1" />
+        <Lexeme Type="Prefix" Form="neni" Homograph="1" />
+        <Lexeme Type="Stem" Form="kwuun̄" Homograph="1" />
+      </ArrayOfLexeme>
+    </item>
+  </Analyses>
+</Lexicon>

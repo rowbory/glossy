@@ -1,0 +1,8 @@
+\check Open Glossy
+\submenu Interlinear
+\script glossy\glossy.py
+\description Run glossy
+\books
+\noText
+\outputProject
+\utf8

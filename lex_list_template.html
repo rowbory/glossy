@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Navigation</title>
+<script type="text/javascript" src="jquery.1.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<label for="lexicons">Lexicons: </label>
+<span id="links">
+%s
+</span>
+<span style="float:right">Sort from: <select id="sort_menu" onchange="change_sort(this.value)"><option selected="selected" value="l">Left</option><option value="r">Right</option></select></span>
+<script type="text/javascript">
+jQuery(function () {
+	// Turn the row of links into a popup menu if more than 4
+	if (jQuery("#links a").size()>4) {
+		jQuery("body").append('<select id="link_menu"><option selected="selected" value="">Choose a lexicon:</option></select>');
+		jQuery("#links a").each( function () {
+			lexicon_link = jQuery(this).attr("href");
+			lexicon_link_text = jQuery(this).text();
+			jQuery("#link_menu").append('<option value="'+lexicon_link+'">'+lexicon_link_text+'</option>');
+			jQuery(this).addClass(lexicon_link_text);
+		});
+		jQuery("#link_menu").click( function () {
+			if (jQuery(this).val()!="") {
+				parent.frames["main"].location = jQuery(this).val();
+			}
+		});
+		jQuery("#link_menu").change( function () {
+			if (jQuery(this).val()!="") {
+				parent.frames["main"].location = jQuery(this).val();
+			}
+		});
+		jQuery("#links").hide();
+		jQuery("#lexicons").prepend(jQuery("#links a").size()+" ");
+	}
+});
+
+function change_sort(direction) {
+	//parent.frames["main"].
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+^WebResourceURL_WebResourceFrameName_WebResourceTextEncodingName_WebResourceData_WebResourceMIMEType_&http://anaturb.net/csstips/sheader.htmPUUTF-8O:<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+    <title>Pure CSS Scrollable Table with Fixed Header</title>
+	<meta name="KeyWords" content="fixed table header,scrollable table, scrollable tbody, static table header,css,tips,dojo,NodeList,javascript">
+	<meta name="description" content="Pure CSS Scrollable Table with Fixed Header">
+	<link type="text/css" href="/csstips/css/nav.css" rel="stylesheet">
+	<link type="text/css" href="/csstips/css/sheader.css" rel="stylesheet">
+    <style>
+        *:first-child+html table{width:383px;}
+		table{width:100%;}
+    </style>
+	<script>
+		function create_select(){
+			var select = document.createElement('select');
+			for ( var i=1;i<10;i++ ){
+				var opt = document.createElement('option');
+				opt.value='abcd';
+				opt.text=1000*i;
+				select.options.add(opt);
+			}
+			var abc = document.getElementById('abc');
+			abc.appendChild(select);
+		}
+		function delete_select(){
+			var abc = document.getElementById('abc');
+			abc.innerHTML = '';
+		}
+	</script><style type="text/css"></style>
+</head>
+<body>
+<div id="nav">
+	<div id="prev"></div>
+	<div id="next"><a href="sheader2.htm">Static Header (2).</a></div>
+	<div id="index"><a href="/csstips/index.html">Index</a></div>
+</div>
+<div id="my">
+<h3>Pure CSS Scrollable Table with Fixed Header (1)</h3>
+My goal was to create HTML/CSS structure that represents:
+a scrollable table with a <strong>fixed</strong> header. (FF/IE6-7)
+<p>I did it before (see the site that I was the author: <a href="http://goskionbus.net" target="_blank">click on 'Schedule' from the main site</a>), but did not think about creating the generic layout for such structure.
+</p>
+<p>There are as minimum 2 main ideas how to do that:<br>
+1. use an <strong>ovefflow-y</strong>:scroll/auto for the <strong>tbody</strong> html table element;<br>
+2. use a <strong>position:absolute</strong> for the <strong>thead</strong> table element.
+</p>
+<p>
+After short investigation (<a href="static_theader_tbody.htm" target="_blank">1st idea</a><a>, 
+</a><a href="static_theader_absolute.htm" target="_blank">2nd idea</a><a>) I got conclusion, that these ideas themself are mistakes. Why? Because they try to hack the <strong>HTML table</strong> structure (that is built in the different way for any browser), instead of adapting the existing structures to this goal.
+</a></p><a>
+<p>
+My idea is very simple: to use 2 html structure (div/div, div/table, table/table) and to 
+connect them horizontally. I have found that the more stable structure is 'two tables' one, but the structure that uses the DIV for the header and the TABLE for the table body has a clear markup and is the fastest way for redesign/reuse.
+</p>
+<p>My main question and problem was: how to work with a <span class="prog"><strong>scroll bar</strong></span>?<br>
+This structure must use the <strong>overflow</strong> css statement, but I realize that all browsers support the 'oveflow' in their own ways. For example: IE6 adds the scroll bar to the width of the scrolling structure, Opera just in the last versions starts to support the <strong>overflow-y</strong>, IE7 represents the <strong>overflow:auto</strong> in the not correct way.</p>
+<p>One solution is: to use <strong>overflow-y:scroll</strong>, but this structure will looks not natural if the height of the table will be less than the predefined height (no scroll bar). 
+</p>
+<p>I am going to investigate <strong>two</strong> very similar solutions that use a <strong>overflow:auto</strong>, and the <strong>third</strong> one that uses a simple javascript code for dynamically supporting such css structure.
+</p>
+<hr>
+<p>
+There are several restrictions:<br>
+1. the DOCTYPE must represent a standard mode.<br>
+2. this structure must have <strong>fixed width</strong>. <span class="prog">That is not too bad, but is a restriction</span>.<br>
+3. all column must have  <strong>fixed width</strong>, except of the last one. (<span class="prog">With a bit of 'javascript' code I can avoid this restriction. I'll show it on the next page</span>).
+</p>
+<p>Let me start from creating the scrollable table body. I specially use different backgrounds and border colors for all elements. For the most important CSS statements I use a &lt;strong&gt;<strong>font-weight</strong>&lt;/strong&gt;.
+</p>
+<h4>Scrollable tbody markup</h4>
+<pre>&lt;div id="<strong>table_wrapper</strong>"&gt;
+  &lt;div id="<strong>tbody</strong>"&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td class="<strong>td1</strong>"&gt;1&lt;/td&gt;&lt;td class="<strong>td2</strong>"&gt;2&lt;/td&gt;&lt;td class="<strong>td3</strong>"&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      ... more rows here
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<h4>CSS</h4>
+<pre>  <span class="prog">#table_wrapper</span>{background:tomato;<strong>border:1px solid olive</strong>;float:left;}
+  <span class="prog">#tbody</span>{<strong>height:80px;overflow-y:auto;width:400px;</strong>background:yellow;}
+  <span class="prog">table</span>{border-collapse:collapse; <strong>width:100%</strong>;}
+  <span class="prog">td</span>{padding:1px <strong>5px</strong>; /* pixels */
+      <strong>border-right:1px solid red</strong>; /* to avoid the hacks for the padding */
+      <strong>border-bottom:1px solid red</strong>;} 
+  <span class="prog">.td1</span>{<strong>width:100px</strong>;}
+  <span class="prog">.td2</span>{<strong>width:140px</strong>;}
+  <span class="prog">.td3</span>{<strong>border-right-width:0;</strong>} /* optional */
+</pre>
+Note: the columns from 1..last-1 must have a predefined <strong>width</strong>.
+
+<div class="table_wrapper">
+    <div class="tbody">
+        <table>
+            <tbody><tr><td class="td1">1</td><td class="td2">2</td><td class="td3">3</td></tr>
+			<tr><td class="td1">width:100px</td><td>width:140px</td><td class="td3">width: rest</td></tr>
+			<tr><td class="td1">2</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">3</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="clear_both"></div>
+<h4>Start to build header:</h4>
+<pre>&lt;div id="<strong>table_wrapper</strong>"&gt;
+  &lt;div id="<strong>header</strong>"&gt;
+    &lt;div id="<strong>head1</strong>"&gt;Left&lt;/div&gt;
+    &lt;div id="<strong>head2</strong>"&gt;Center&lt;/div&gt;
+    &lt;div id="<strong>head3</strong>"&gt;Right Column&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="<strong>tbody</strong>"&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td class="<strong>td1</strong>"&gt;1&lt;/td&gt;&lt;td class="<strong>td2</strong>"&gt;2&lt;/td&gt;&lt;td class="<strong>td3</strong>"&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      ... more rows here
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<h4>CSS for the Header</h4>
+<pre>  <span class="prog">#header</span>{<strong>width:400px</strong>;background:DodgerBlue;border-bottom:1px solid red;}
+  <span class="prog">#header div</span>{padding:1px <strong>5px;float:left;border-right:1px</strong> solid orange;}
+  <span class="prog">#header #head1</span>{<strong>width:100px</strong>;} /* the same as <strong>td1</strong> */
+  <span class="prog">#header #head2</span>{<strong>width:140px</strong>;} /* the same as <strong>td2</strong> */
+  <span class="prog">#header #head3</span>{<strong>float:none;border-right-width:0</strong>}
+<strong>Note:</strong> padding-left/right and width of the header columns.
+    The width of the <strong>#thead</strong> and <strong>#tbody</strong> is same.
+</pre>
+<h5>FF3</h5>
+<div class="table_wrapper">
+    <div class="header">
+        <div class="head1">Left</div>
+		<div class="head2">Center</div>
+        <div class="head3">Right Column</div>
+    </div>
+    <div class="tbody">
+        <table>
+            <tbody><tr><td class="td1">1</td><td class="td2">2</td><td class="td3">3</td></tr>
+			<tr><td class="td1">1</td><td>2</td><td class="td3">3</td></tr>
+			<tr><td class="td1">2</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">3</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+			<tr><td class="td1">first</td><td>second</td><td class="td3">third</td></tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="clear_both"></div>
+<h5>IE6 (image)</h5>
+<img src="images/sheader_ie.png">
+<h5>IE7 (image)</h5>
+<img src="images/sheader_ie7.png">
+<h5>Opera 9.63 (image)</h5>
+<img src="images/sheader_opera.png">
+
+<pre>As you can see, there are several problems that can be solved (or not) only with
+extra css statements (we call them '<span class="prog">CSS hacks</span>').
+
+<strong>IE6</strong>
+There are several ways to make IE6 works in the same way:
+1. make the <strong>#header</strong> width 400px + 17px (15px the scrollbar + 2 pixels borders).
+    <span class="prog">* html #header { width:417px; }</span>
+2. make the <strong>#tbody</strong> width: 400px - 17px.
+    <span class="prog">* html #tbody { width:383px; }</span>
+3. make the background-color of the <strong>#table_wrapper</strong> 
+    and the <strong>#header</strong> with same color!
+    <span class="prog">#table_wrapper {background:DodgerBlue;}</span>
+<strong>IE7</strong>	
+    The IE7 table is <strong>scrollable</strong> (mouse wheel) but the scroll bar is absent. 
+    2 ways to work around:
+    1. <span class="prog">*:first-child+html <strong>table{width:383px;</strong>}</span>.
+      In this case the table without a scroll bar will look terribly.
+    2. <span class="prog">*:first-child+html <strong>#tbody{overflow-y:scroll;overflow-x:hidden;</strong>}</span>
+      I'm losing my main idea, but this code makes IE7 output compatible with 
+      the rest of the browser outputs.
+<h5>IE7 (image)</h5><img src="images/sheader_ie7_2.png">
+<strong>Opera</strong>
+    Only last version of the Opere supports the <strong>overflow-y</strong> css statement.
+    Use: <span class="prog">html:first-child #tbody{<strong>overflow:auto;</strong>}</span>
+    This css hask solve this problem.
+</pre>
+<pre><strong>Note:</strong> our padding does not work for the last column of the header.
+Small work for the markup:
+    <span class="prog">&lt;div id="head3"&gt;<strong>&lt;span&gt;</strong>Right Column<strong>&lt;/span&gt;</strong>&lt;/div&gt;</span>
+and CSS:
+    <span class="prog">#head3 span{padding-left:5px;}</span>
+
+Also we should not forget, that the scroll bar occupated 17px our last table column,
+and decrease (not in the IE6) the width (for a content) of the last column.
+</pre>
+<hr>
+<strong>The last question is:</strong> what wil happen with this structure if the height of the table 
+will be less than our predefined height 80px (no scroll bar)?
+<pre>If I use <strong>overflow-y:scroll</strong> for the <strong>#tbody</strong> I can forgot about this question.
+(In reality that is not the truth).
+But using of the <strong>overflow-y:auto</strong> is a more desirable way here.
+Together with the <strong>width:100%</strong> !!! for our table,
+(this is the problem for IE7)and the not defined width for the last column !!!
+I solved this problem. The last column will occupy the space for the scroll bar.
+
+Now my <strong>answer</strong> for this question is: nothing wrong!
+</pre>
+<div class="table_wrapper" style="background:DodgerBlue">
+    <div class="header">
+        <div class="head1">Left</div>
+		<div class="head2">Center</div>
+        <div class="head3"><span>Right Column</span></div>
+    </div>
+    <div class="tbody">
+        <table>
+            <tbody><tr><td class="td1">1</td><td class="td2">2</td><td class="td3">3</td></tr>
+			<tr><td class="td1">2</td><td>second</td><td class="td3">third</td></tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="clear_both"></div>
+<h5>IE6 (image)</h5>
+<img src="images/sheader_ie2.png">
+<h5>IE7 (image)</h5>
+<img src="images/sheader_ie7_3.png">
+<h5>Opera 9.63 (image)</h5>
+<img src="images/sheader_opera2.png">
+
+<hr>
+<h4>Conclusion</h4>
+</a><pre><a>1. Use the right <strong>DOCTYPE</strong> to get standard mode (</a><a href="http://en.wikipedia.org/wiki/Document_Type_Declaration">DTD</a>):
+    I use here: <span class="prog">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd"&gt;</span> 
+2. The <strong>width</strong> of the <strong>table</strong> (div#tbody) must be <strong>fixed</strong>,
+   and must be <strong>enough</strong> as minimum for the header.
+   (<span class="prog">unfortunately an enough is a "good meagure" until it is "enough"</span>).
+3. The <strong>width</strong> of the columns must be <strong>fixed</strong> except of the <strong>last column</strong>.
+   (you can see how to work around of this problem: <a href="sheader_js1.htm" target="_blank">static header with javascript</a>).
+4. The <strong>paddings</strong> for TD and the HEADER DIVs shoud be specified in the pixels,
+   and have to be with same quantity.
+   (in case of usege the <strong>em</strong> - the <strong>font-size</strong> must be same).
+5. The <strong>height</strong> of the <strong>div#tbody</strong> must be <strong>fixed</strong>.
+6. The <strong>div#tbody</strong> has to use <strong>overflow-y:auto</strong>.
+   See the solution for IE7/Opera above. Safary works correct.
+7. Use <strong>border-left-width:0;</strong> for the first column of the table
+   in order to avoid the hacks for a padding.
+8. For IE6, the <strong>background</strong> of the 'div#table_wrapper' and 'div#header' must be the same.
+9. Usage of the <strong>&lt;colgroup&gt;</strong> for the more clear markup - kills this structure (<a href="http://en.wikipedia.org/wiki/Quirks_mode" target="_blank">quirk mode</a>).
+</pre>
+<h4>This structure works for any number of the table columns.</h4>
+<!--button type="button" onclick="create_select()">Create Select</button>
+<button type="button" onclick="delete_select()">Delete Select</button-->
+<div class="clear_both"></div>
+</div>
+
+</body></html>Ytext/html©$).38Ô_WebResourceResponse_&http://anaturb.net/csstips/css/nav.cssOÅ#nav{text-align:center;background:#E2E2E2;padding:3px;0.5em;}
+#nav #prev {float:left;text-align:left;width:200px;height:21px;}
+#nav #next {float:right;text-align:right;width:200px;height:21px;}
+Xtext/cssObbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _&http://anaturb.net/csstips/css/nav.cssÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa-6PÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveXtext/css_Mon, 14 May 2012 20:06:05 GMT_Sun, 16 Aug 2009 16:37:11 GMTS197Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionaryÅÒ*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á
+#),2;DFMU`bmoqsuwy{}Œ’”–˜šœ §µÀÍÒàï
+&/Oos~œÌÑçëøúÿ+9KNd             n              fÔ_*http://anaturb.net/csstips/css/sheader.cssO¤body{width:80%;padding:0;margin:0;}
+#my{padding-left:.5em;}
+p{text-indent:1em;}
+
+.table_wrapper {background:tomato;border:1px double olive;float:left;}
+.tbody{height:80px;overflow-y:auto;width:400px;background:yellow;}
+table{border-collapse:collapse; width:100%;}
+td{border-right:1px solid red;border-bottom:1px solid red;padding:1px 5px;}
+.td3{border-right-width:0;}
+
+.header{ width:400px;background:DodgerBlue;border-bottom:1px solid red;}
+.header div{padding:1px 5px;float:left;border-right:1px solid orange;}
+.header .head3{float:none;border-right-width:0;}
+.head3 span{padding-left:5px;}
+
+.td1{width:100px;}
+.td2{width:140px;}
+.header .head1{width:100px;}
+.header .head2{width:140px;}
+
+.clear_both{clear:both;height:0.75em;}
+select {margin:0 15px;}
+h4{background:#E2E2E2;margin:0.75em 0;padding:1px 0.5em;}
+h5{margin:0.5em;padding:0;}
+.prog{color:olive;}
+#nav a{font-size:0.82em;}
+.att{color:crimson;}Xtext/cssOgbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _*http://anaturb.net/csstips/css/sheader.cssÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa,şx:ÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveXtext/css_Mon, 14 May 2012 20:06:04 GMT_Sun, 08 Feb 2009 20:22:34 GMTS932Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionary¤Ò*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á'-06?HJQYdfqsuwy{}ƒ…’”–˜šœ ¢¤«¹ÄÑÖäó*3Ssw‚ ĞÕëïüÿ0>PSi             n              kÔ_0http://anaturb.net/csstips/images/sheader_ie.pngO‰PNG
+
+   IHDR  ©   q   Xè¬Ÿ   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<  €PLTE°Äò²Çõ³Èõ»Íõ­Éù´Èö¼Íú¯Íû} ÔÂÕüÁÒû­ÃöÍÚü±ËúºÑü¹ÏûÿcGîíåşşûûûùMa…ÿ¥ ııúôñìóñìôóî÷÷óöõğùù÷õôïùøôûûøîôşŒ°øÈÖûŸµÒÉØü¹Íû¹Éó|ŸÓ¶ÎûÅÕü»ÎıÂÓü·Êõ¾Ğü¶ÍûºÍüÊÙı¸Éò²ÏûÈØû¸ËöÅÖü µÓ¼ÌóÑàı¹ËóÎÛıĞßüÔáü½Î÷ÚæşÊØùµÉóµÍúĞİüÀĞ÷ÊØı·Íü·ÓüºËô¾ÑüÜæùæîü³Ïü·Æñìò÷íñó„¤ÔºÔüÙãöÛãøÄÒ÷áêş”°İ±Æó½ÓûÃÓı¯Åô®È÷ÑŞı®Äå±Èó¼ÎúâäâÆÕıˆ§Ø®ÀÖØãüÏ×İ¤¸Ó¨»Ô¾ĞøªÀóÄÔ÷·ËùÎİı³Ñü¶ÑûªÁâ”±ÙÅÓüÄÓã‚¤Ö~ŸÒ³ÃÖ²ÍûÈÕû½ËÚšµÜ”¯Ù€€ ÿ   ÿ  ÿÿÿÿÿ  PÀµ  ‡IDATxÚìù{ÓF†Câ((¨ô.ÅÈNl%$qì&5hG/Òh¡.-GoZZzj,ıëX¶n­°IĞî(ùæ‡<–ûÙÏûîìv'š1VC€¤ö(©ÿaÜÍ'eIµ-–ÆHÖ‘¤HHH‡¹ûBòú™wI¿EbDŠÂNe¥&u“lŸJ4H9hˆ‘¢Á¯fåSé˜ÔM»eHRM*‰*!+­{—“"«˜¤ºÕ‘êÏÕD”^ºr ®ˆdùíÆßQ2ûQ°tGe%±÷ÙÁ'¢¯v¢}dRZI>48 ¶Ky…4O$åµI¡ˆ¬ÔKtE‰Ñ¶»otRD$—T¬AŠ¿#İ§H!sÖ#Ágw8ĞŸÊ§,Ù>%ü‰JHE°&E’HEšaJ*X,c¤’º•‘JM½yßOYéÁK©Ş‘û	%uÇ;Ë¿ÎT$Öb¿\B¯ÄE4Ø´‚6# ì=Š0è£PÅouı‹¨V+úÙà«Ø÷Ë_)»»)Ú¤¬|nüAjÉ©â“êÂXHÅ´cñD?- åHµ®ÃÒÉÒì÷OŸûìÂúDs~jß—ïÙß€[R§??{fm£½´Ò2;Uû.H±%uîì›í%£ö»¹ğÜeûbKêÇ3kmÃø{¡^¯wVíG Å–Ô÷?/•Ëz}±²¸¸jßO“"™]BDI‘z]š½Ş>hº®W.V*«ö½$)I»á¨ ~¤ÈQ¯K³›Ææ¦îÚÜÅÊeûmµ>Å¡K²f?å¤æ{SŸ®›.ªSï¨&åğ%¥~ö›ªõ Õ¦¯÷ş¾{Ş>	RbYÊEiö>³¥·¦§?nèCãH1\§8D:š}`Á¼1İ#ué—ı“_3 Å2öc±NX\xşÊ•ë—~mìŸ¼¦+P¼HığÓáN§søÔ_‡&¿SQğÅ‹Ô§.W«ÕåñññkcŸØß!Jçû=ŒzÜJŸzÈYK»á^ ñ#ÅA”võÁoßn•şœ-•J|ñÎ§¸ÊÂIbaHN/¬OL4q’È›Tÿ$qm£İ^rO‚[Róå•·úö‚»ïw¤Ø’šª•Ë'úöAlßÙ@Ìr“àS…÷)Â:RÛ&åùHñ&Õ46=ŸrOçAªÀër“˜ä&õ|jåöí¦)ö)ä&9\r“§Õååş©Ç#œzdÍ~ªIıÛ } !ã%C–òÙïê[³•¶„§ ÅB”öòK¯¼ñÚ«o¾~üèÑc333r“„²DìH!7© ¤›TRÈM*)ä&í€r“˜ä&÷)éÓÓÙ¤@
+¤@
+¤@
+¤¶A
+Ù@Ìr“àS˜ı@
+¤@
+¤@
+¤ò'%7ãeT#ù¤HĞ21"%+YèéH‘|R¢&‰)¨xûTÖxåDÊ)’,‹Şâè¯‘Ş•^Ê%Õ?òš§@ˆD£’"©ƒ—‚!LNôe›©Â§|Fş0b¶N9
+Nçïà—âKe„ŸªÙ
+x‘"™]Ì0É¸¤†ßOI‡AªQúÖ©Ø%‘dR”$%UÆH¤$%uc;"¢Ø‚Å\zìçÇ~-Bé!èÈQúŞÚ`c*¤@
+¤1)<‹¬(¤PÕ¨0¤²ª!ˆÛs“PÕ¨(>…ªFE!5¨jTÎ®jRLH­·ê†Q¯TtaU#bCªéŸ2Í9·•°ªH1!5¤ªIıŸÄQm/æ&ÙSµZmP)lNğ„+/{27É­jÔjõ@5UñÂ#ãÅ«j¤gW5r0û1!Åªªr“²I«j$÷)ÈMÊ&5´ª‘äÓy¹IbRC«9’33d¼ˆIeV5‚q7¬R )‚q¶Ç Ù†ûn¤3(Ü    IEND®B`‚Yimage/pngOobplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _0http://anaturb.net/csstips/images/sheader_ie.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.*ÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:05 GMT_Sun, 01 Feb 2009 19:25:02 GMTT1921Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionaryÒ*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á$-36<ENPW_jlwy{}ƒ…‡‰‹–˜šœ ¢¤¦¨ª±¿Ê×Üêù%0:ZzŠ¨Øİó÷ $8FX[q             n              sÔ !"#_1http://anaturb.net/csstips/images/sheader_ie7.pngO¨‰PNG
+
+   IHDR  •   W   ûÒ(   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<   ]PLTE›Ô ÿê r  ›  êÿ ÿÔ ºê  r Ôÿ ºr êº Ô›  › rº rr ºÔ ›› Ôê ºº º› Ôº r› ›r ›º ÿêº›Ôÿ€€    ÿ  ÿÿÿÿÿ ¾mj  ÑIDATxÚì‹v£ †1ëu›íŞ×÷Ìe¸“Ú*néúÏ9	¦Éé|2`øƒâìŞ~´şµk4Cå7,1³TzVëú$-¡°@T@T@T¶£R>«/µ	RI ¬*RsR)‹¾J	‹KRXEJ}¥b¤¢r"Ó¤F%£ùQ©X«“£bÉ|ëM¥	RÉ>MeÿúO„Ui}ÜqÅ&°¼O°¯.í©T)MŒoë©(S÷ì9E*µH‰JÍIEi½Os¸»»ŠÔ:çª~e¡$73¦så)­9{ªHt\éAT@T@Tş;*,)C_APP•ƒR‘îKÓì$Æ/­yLå• U¼"¤[á®ï•=¨¶ D…µ#å›@ZÂë`”.ì‡Bùˆê¿ãè`»-ÂÚ5ƒÑYRŠád±æÖ`hÁÎŞP>$U¼í®ïë:Xãn“°¦ìq"„y*rª™²SnŸBù¸êËi*JĞÁ*w›„5er*¥Ö…Ô:W&iƒšÖ?­¹|>‰R7¦+·¡™”]­’"”}Bçô?r9·FÓE»ëû‹=Xå.ÊÂ°ˆ‘4Ñ˜·^€!·†7î+ÔéQ”Bi]²ÖÔ &Š2¼wT.v¹¬6/Ì»u±ì¤Œpg>3¦ç.²¯,K9eNxhí²*fûÒ:*To3^¬'—,|<âš7®TÌŸCi#²Oåü˜ØE»£ÕıJ¬»H*ËÂrŞİ"w›šÑTíÁTŒK%d^YşÕ¨ÂãíqÅ½+ÛEY¿‹vgÓˆÖb•»H*ËÂòTüÄÃt£f+*}İÔEİ|9»^¿ÓL¶W~fJßLæéûW½0ƒÅ¸kÜÅö‹Â
+}%8W.ËmA…2¥}r ±l*§ƒ¡³DŠ¡´}˜Ş)‹yípïnÈœ+ÜÅRY–?¢k\ÕR‚­Û­¨Ğ¯ÜƒFSé²Fi‹ç“Ö/4İ:˜ÛkûìôÉJCJ:eæ4"İ
+w¡Ó¬p=3^Öğ+©mî²br“9Ø?XÔyÒñº;î·“ ’ êÂ‚¯úqîÛW>jõAT"©@Uú
+2¨€
+¨€
+¨ìF…i“¸êor?–|-jaã
+×Æ*QTÛ^7×°‚šeDE±n¹3¢Â¶±JÚ}å5Ën}…¬><™ •’/ƒù9œJ„ŠÆ´\"­œ$(L8©ŒÔ,NLCë^œaLPaù¥y7¸ª
+¯¡İ hı6…(ŸÎNú“…	'•‘šEê‹;qXÃ˜ Â²±J¨~Ó*¿ ®nÄA«±ï>ˆiò]3ÏÆ*ƒ˜„4o^$åVïÕú¦	
+“}¨ˆ@…7ŒWT˜6Vé®ÓM1t’Üÿ¡÷é|¬0Ù™
+o÷T¸6VñÕ·Â¯±3òì‡ì‹ ,)Lv¦ÂÆ¶UBõ39Vğeéä$ƒÂ„õzeP³èÁ9gøìC|* * * ò*P•@ã‚¾‚* * *»QÆ%4DB®»ô@ãA…í.=Ğ¸D+,wéÆ%
+Ï¶ıĞ¸DQaºK4.‘Œå.=Ğ¸Ä^¯”lT qYN¥æTCãò.XbFT`É¨€
+l™ı` ˆ×N§é2°y    IEND®B`‚Yimage/pngOpbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _1http://anaturb.net/csstips/images/sheader_ie7.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.×hÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Wed, 04 Feb 2009 02:48:14 GMTT1448Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionary¨Ò*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á%.47=FOQX`kmxz|~€‚„†ˆŠŒ—™›Ÿ¡£¥§©«²ÀËØİëú &1;[{€‹©ÙŞôø!%9GY\r             n              tÔ%&'(_3http://anaturb.net/csstips/images/sheader_opera.pngO†‰PNG
+
+   IHDR  —   l   ‘šQ   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<  €PLTEöõöïïòááäÎĞÕ¹¼Åx|„ÙÙÛĞÒÕÓÕÜ½ÁÇ²¶½KKK——œçèëÖ×Ø®²»ªª­âãç¢¥ªÈÌÒÕÖİÈÉÎìëìåæé||}·»Ã«­°òòô÷÷øúùúİßã¿¾¿ÌÍĞäåè„„„ÁÅÊãåèÂÁÂÚÚŞèèì¹¸¹İİŞµµ¶ÆÈÎÌÎÕºº»ÓÔ×¡¨Š‰‹ÃÆÍàâèÙÚŞßàâ888ÔÕÖëëïÚÛÛäæê###ÅÇÑÀÃÍììïÍÎĞ–š¢†Š’áááıııÿ¥ áâæññóæçêããåßáçÖØßÚÜáâäçÒÔÛŞàæÑÔÛÙÛàŞàäÛÜáéêîââäİŞáÛÜàğğòíîğëìïääæÜİâÛİààßàËÊËÍÌÍŞŞáééëÎÏÓÇÇÈëëîÄÇÏğğóÅÅÇØ×ÙÛÜŞ¦¦§¦¨«ßßåÊÍÔ€¶¹½ğïğôóöÓÓÙéêíííñğğñqqqwvxxwyØÙÛØÙŞ€€ ÿ   ÿ  ÿÿÿÿÿ ĞÃÆÃ  ŒIDATxÚì‹WWÆóÂÄ€U1Q"ŠXKQ¤%¡­µ­}	[û°¥Om3éşëÍf7û¸Ù˜ôÀÎÀ79‡Ãb8÷ËıİïÎÜÍ#ÿ"$FS –Ë?aas©°Æû‘!H¸€¸€¸€Kè\Èß?«×G>õI
+rgÀÕÔ¬NM¡ûEÂÔåBÖË”ã—æWÜ¬NMÇµXo¤•‹
+FÑÔ,ú¸q¡Jr	ÍÈ¥¾ÍQsÊ	‹›É¨Ò×ÿş}Œœ|ëÕ¤B û¹Ö3¼ßRx.¶<&¿8Z<Üq)¬Â£5{@rUx45-&e¦ÈË‡3w­¸/ß€äÿ	¯_(pÊ[î_ğÜÃ¯é×ø¥Âí—À×ÄÏÅ;İ²¸Ï0¹8ÎÇEÍÇ¥i×ûüRi^›Ô4ÌõXÀZ!U´¦‡Í£çâ©¿œz,”rH9ï{ÀŠ3¦§(c=ï»…¹zÈl\x…V¼Ïu~÷ÇZé<J¸t—J8gjpéfYà"›K!*\Ö¨"CŸ¬H~egkûòÎåí­í­•|\DÈúîâùúcw´|°¼."dí~ZZ©!ùâ³OŞ<Û²N]Œ}¾Vúª‹ŞüòÑ[óQø¥[üBœP;·IäBìºŠŠ_’
+&AUw<.d°ëÊÚ~™±ıÒ¯Õ/& ã}ŒWVÒòËì÷}–_èİÇäraVµY÷Ë¹¾¹‰¹º_bà(‹[Tİ/s/_¼|ñ×°¿Ì/ê‘›¦_ŞzšüöÉ”é—1İ\DÖcüÂî*õX^3QX4ry¬œ_k>¿àRŒâ—êdi¯­_x2^Õ=W“<.DåG¿¹S{ì=ß}µùëÉ·ó¸?&BÖ³øXf#ó°ö0¿ÅŸ‹Y·¯ÌNMÏLÍŒOOOÍ^¹."d=ÿ%bÆA©ôûoïÜX_²’‘ÕÍB¶\X]{0ôÁG"¿ÈõªÆe ;PèYíyp½Æ¥ˆ~áõK~é—œ×/à"&¿,Ã/"ı²¿ˆ‘•‡_DÊ*züÒèôÃè¸AæõË½ ¿ ÆĞr›ÛôKqòçk×–ïõh÷úa‚ü|ŞGß…UÅ½‡füJÅ÷—–REp	”Å-*~58{Á~$ÒWãè‡	’Å÷ß[Qè‡acË
+úaDpæôÃˆôúa:öúa´ôÃ´÷û†!t“V‹€_àp_­_Ğ’¢5àäpA~_À~_ôô]tÄÏ…F&m~ájPù\ˆŸKĞaÊhã®ï²ıÒjuêó‹.z¸tR1r±Ò™Ô¹Í¾2ÜK^.õ·_ìáÉ®ŒüB¬“œåI†÷Û:¤Æ¥¿4ˆ4ÖübhxÙ°ß´$ŠóĞÒµ‘¢@§_ˆsœ½B­LO—¶çö‚\:<¿0æı×äß%3R¹„-£İù…©A¥ê»»T‘“rÙë±F¶oüïQe!îuçı1pÑğü.>OI¦¬GŒš‰î•ûoæÑ#"Š£ı—²å3Ùşş7î§Rëwá²N)\n‹Yğ‹LYq…Ë ¸ˆ•Q¸L‚‹Yƒ&—á‰‰á?{{M.×›ûaäõ]œ€~˜I“K®·waaaÀärºú.N@?Lİ/åÜâââA~Éåô]$¬ü’£sV~¹ õı}pñícµ¼Ÿ+X\NKøü1ôÃi¥Këı;qôÃø÷1‡KBk~A?LÇ~1˜ûúô]˜±çk3æ‡†’?½»´4´¯»C?Œu&Nœ5?ÌüšHÇÏC‹B^€‹ÌøO€ ªAñÓ_E/ÿ    IEND®B`‚Yimage/pngOrbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _3http://anaturb.net/csstips/images/sheader_opera.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.½ıÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Tue, 03 Feb 2009 03:28:27 GMTT1926Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionary†Ò*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á'069?HQSZbmoz|~€‚„†ˆŠŒ™›Ÿ¡£¥§©«­´ÂÍÚßíü"(3=]}‚«Ûàöú
+#';I[^t             n              vÔ*+,-_3http://anaturb.net/csstips/images/sheader_ie7_2.pngO	#‰PNG
+
+   IHDR  ˜   l   `‘TÜ   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<  €PLTE…º¦ºÔ»ÉÙ´Èö¹Éó¬ÂõÂÑ÷äìı­ÉùÉØü„¥Õ¹ÍûÒàı}ŸÓÉØú¶Íû¶ÒüÌÕİ¬Âãíòõ¸Ëõ»ÎıĞŞüÅÕü½ÒúW›ÎÛı°ÅósÔ•±ÛjºÂÓü±ÎûÈÖûxº¾Ğü²Çõ³ÈõºÌô¼ÎúÂÕüÁÒû°ËúºĞü›Ô ÿê îíår  xÿşşûûûù›  Ma…ÿÔ êÿ ÿ¥ ºr Ôÿ ÿ   @ºÔjrııúºê @ x› r ÷÷óôñìóñìõôïÿùù÷ùøôêûûøöõğôóîêº   r  › jêŒ°øÔ› îôş…ÿ › rº ŸµÒ WÔW ºÔ rr ¼ÌóÚæş½Î÷µÉó·Íü ›@rÙãö²Ïû…êxêºÔü·ÆñÜæùÛãøâäâÔê ·Ëù‡› WºÅÓüÃÔç®È÷±Èó…Ô°ÁÖØãüÎİı€€ ÿ   ÿ  ÿÿÿÿÿ !„–T  )IDATxÚì‹GÇi“j0©I•MŒˆäa#ô@‰ÒGZÚ)%ib5Õû®}?ØÀ¿îÎîƒ°¹¹ù|:ó1bÎËg~7ßİ½ÛÉ­¯ÁFÒ|º`şe#f6˜:ªİ­“4B²ƒa0†Á00ÅM!D¹ëÿ„H¸‚ôx¿øË="`  R”“ÍØ×İş×q¢{Ï8õŒÉ=ÜîæR®Ü¿ç˜ƒj½î¯fLN^mÈ´‚Í8›¦Stï.€é¦ êŠ›	×ÀäôeŸ9À¸âsh0õƒ®†âÓ"[šzEûĞÁ€G7òÔ€ÉfŒ»«0®øLq³[SÑ˜``¸)ç„¶Óïiîš*w$	oÙÌ7›b_öÒ§>âW2h=“YÀ¡ .Ş'Úšúˆ–?à—åP\€¯çò\yxß\Êiƒ)~U…v MÁæ`ÀÚ×¨^Éˆja§
+>õ‘Ës ’`Zc¿H _[“SôfY~Á&RWœ«ÎÿÓ\Ê)ƒQmE”ñÀt:ÔAè8‚Û•åLb$¤ºïáv‡&§h8SS1‘²fÎ÷>ıé2˜l¦•êİ˜ö\0ÅÍ}í¢ òÁÖä­f3å>`şsoÓÌõjA÷.ƒÑOp›èv¨À´ şÊ¥IZ)Â¦S4’ÕmCÏY/¸İ•Áà™ĞwKİÕÓ>‚	Ó*Ì„Ø	¦S´<[Br<*Ã¹¦¨o|a.“}èæaŠáÖ¬LİılA9”í\—èsğiA$£îü&0~K»Ú©É!ZÏÊ@uõ@ÀDÎ7_BÿXõt2†Ÿ•uŞæ^|ñè©ƒ9^–pså:ƒ¡–1½Ït0ƒ¡æˆ”µÀ4Qí¨IÒ¼“Ğ]Rg0DÀ4ÎÎ?sæp%[Zø¾ñ#ƒ¡fîì“©©¹y¿?Zo¼Å`¨€9ÿäo…å×Pdu¥ñ:ƒ¡&85%¹„#³³³«ñ¬Œ†Å‡sÿøÃáäì¤´Ç×8c¨dÌá¼L˜d29ù”Áğ+.ÉäôÓÉ•Æç†Ù%“! 3`0tÀŒ%“àK@æKCÌR((¹Üø¶–¬­-÷“ŞºƒKˆ(A0ø²â7"¡Ğ	f¦vmâ^0–À“Şh–(‘1²,µf2òv$rif¦¶6±Ğ'cJˆ`Ry€³KL"`å±Áü<¹ººzsúÚÚÄï^ƒQV!FÁyİ•ığİ8ØòòòÂÂ×wşIG	‚‰}qÌo]Oı/Ä=ƒ‚ad•„Àc.^X<wîMmç/z¦’oÌ‰fÌ{ï~òşÇï|øÁG·o?¸uë–ç`J”fË]=ìÿLJ^~ìE0•(10L0)UJºAöĞ7pÍ_ŞóŠ<VJŠ¹é24—-ìY™^ó?s¸²à5B²ÌšÿÔÜü¼Ÿ×üI	„ıŸ)»ÉıI†ÃŸ*«ñcÎóÊÃ…*WÉpÆĞíÊLÆ0Z`üvÆp•ÏÊÌPãC¡g-0fs|¼ÿ
+&R}Èhˆ­GÑÁXÑÎ×eÄO^ÁÄ*[	L
+­˜¨-Ë=`\•¿¸h¯_ö[ÁD+[¡1éh_—®fÌÀõœ²Ú`,š`Òx]™)zHµÂÖk3i½bEÓêÛ
+¬Ù ‚5©ŸÖµ{+*qXR¤Ë2† ƒ²vwÔrUÚh¦óª1¦÷d7®> NWF'Ÿyµ¢ZÁbbëÊ½%^è¶ã¶Œ!À ”­ØØmÚëË{)½Ä¬>dhttòòzW¦]÷JHÓuCcDñ" ír·™ÒË¸æC[{&:%ÃÉ0QŒë2‚A*[9jÏA£­TÉ›MÓµC$ÔQïÁ¸.c¬²Ù*{ê7?dƒ€izL1Ò}iëx½ãºŒ`ĞÊVìhgVëº3=+“ß<Z‡ŠKàMËìûåÜ‹–s—e3]æge^<+c0†Á0Ã`ĞÁp¡Š·U2œ1Ü•1Ã`ƒa0\%ÓOv•Ì 0XoQá*™ÑÀ ½E…«dFcPŞ¢ÂU2#ƒÁù=j®’Ò[T¸Jfô®å-*\%ó
+÷1i40\%3˜
+fQ9WÉ0ƒ·)Á¬Ää*™˜“·)A{‹
+WÉô€ámJh>+ãmJ¨‚9n›ã1½MI˜·)!f~>é÷K.IC
+L 6)	…¦a™~—¥wÉğ6%$3f,ê}¦ùÍ”À,…4™Z­ÿ6%Æ#0z›’äqÛ”0ÏÀØ¦„ÁxæämJ*8Ï¥¸J¦ÌÉÛ”Töp–¹JÆ	fÀ6%VkwŞ“ÁU2N0ÇnSÂFÌ6‚Æ`ˆÚK Úi¯kU¤)¼    IEND®B`‚Yimage/pngOrbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _3http://anaturb.net/csstips/images/sheader_ie7_2.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.ì²–ÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Wed, 04 Feb 2009 02:48:13 GMTT2339Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionary	#Ò*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á'069?HQSZbmoz|~€‚„†ˆŠŒ™›Ÿ¡£¥§©«­´ÂÍÚßíü"(3=]}‚«Ûàöú
+#';I[^t             n              vÔ/012_1http://anaturb.net/csstips/images/sheader_ie2.pngO{‰PNG
+
+   IHDR  —   l   ‘šQ   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<   PLTEÿ¥ €€ ÿ   ÿ  ÿÿÿÿÿ ïbòÊ  ìIDATxÚìÜëvÓ0„ÑÔcüşMlY7ÈŠ&í7¿êĞ‰¶nN¼¸ı"¹Ñ®.Ä,»ËšÛb£²pÁ\pÁe¸‹>Süq}ıò¸·(7=qÖÖVY¯aó¥ú—õÚÆ:ğx{~ó¥}çm•uñú6.ºg²p©aªÚÚâ¿‹‹–7véàr_^%µ[Î —s'Ór´[şfŞ:¦´ïæµÕÚ_ûxEşÓ“oàÂe/+h¾¤g»uğø»ËŞ°Îj²ÚšAUõ˜r=Ó‡W.’b]ŠUşfÎ|Q·Ë/×/u^ûüØşb¾,Ñó¥û^æ¹äİíá¢ —¬g—´Ó.uñã]šÕrôıËÒI5İ0é<Ö3jÎlE7›¯sÉÎ_é<6ä8tkö×Ôà’ÚÌeSî÷Ïƒ˜ÎºTŞHyÁKşÚôWù|ìÕeiÆ-.¸¼©Ë2æŞ—w,o—•Xo—-4ëf£²pÁ\pÁ%ÄE‘ğç>ÚÑEóëª\‚
+ZÏ1 ?móëš:_:àjûÉ.›¯‹Ù:†‹IQÓ]÷‡óÈlËóû‹.«%.şçd·ı%fÇ[Ïûjù¹8Åçceá‚.¸à‚ËH@áyæë.¸à‚..±Ï]ükï¢NËšæõ€Êÿ¹(Ş¥×¤æºDÀxÏ—«Ñ9ÏeÃ—´í›Ú±·íWÛyërÿúeo^©À2ú.
+˜JÃS[şãé¸œ1_‘cĞLİ_¶	ß#oû—–*·¸LkÖ:¦ª‚™.Šì€´VÔ'S\êû—ğ).~çä/ö—âR
+vQíZFÇ%è•µøt¡wSÚrÃÏcÇnü/FáÇÂ‹sòÏú Ê´,\pÁ\péÂ(<C\×1‚.\.\.¸\p!¸\p!¸àBp!¸àBpÁ…à‚Á…à‚Á‚.¸àBpÁ…Œr!fy¸Ãàâ™ß ±LXÓÂ§    IEND®B`‚Yimage/pngOobplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _1http://anaturb.net/csstips/images/sheader_ie2.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.×°ÄÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Sun, 01 Feb 2009 19:24:59 GMTS891Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionary{Ò*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á%.47=FOQX`kmxz|~€‚„†ˆŠŒ—™›Ÿ¡£¥§©«²ÀËØİëú &1;[{Š¨Øİó÷ $8FX[q             n              sÔ4567_3http://anaturb.net/csstips/images/sheader_ie7_3.pngOù‰PNG
+
+   IHDR  •   i   Å¢Nß   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<  >PLTEşşû   xÿ…ºïïì›Ô ÿê r  ÉÉÂÿ¥  @ºÿ  Ôîíåjr@ êx›ÿììä  r›  êÿ ëëã  › jêğğêÿÔ êêâ…ÿºr êº ììå r îîçÔÿ ññëºê ííæææÜççŞïïéææİååÛ › Ô›  WÔÄÄ¯W rº ññìèèßòòíóóîééàÌÌºÌÌ¹õõñrr ºÔ ããØââ×ääÙ ›xêjº…ê@rxºÍÍ¼…ÔÄÄ°W›ôôğÏÏ¾××ÈüüúxÔÚÚÍÉÉ¶jºWºÆÆ³ÒÒÁ÷÷ó÷÷ôÅÅ±ĞĞ¿ßßÒÓÓÂØØÉ jºjÔr› …ºÔê xº››  W››º €€ ÿÿÿÿÿ  ÿÿ ×ä©  AIDATxÚì	wÚ8…#(„¶–—²Sö¥d’’´“éŞÙ:Kgß÷‡ÿÿFO’†LN±¤Ü{JÜ¨æ¼+}Ö“l«G;.dŸvÜ Ë$¨LµêúÔJYdT@T@T@%*Ùc¬èûÇ#Æ"aV?Ç#ŞÈ~yÓ"*¢¸+î)•ô*¿øÛ9_=ck}%}{ß¥8=ºq3<*GÕé4ÊQM÷•4¯r°Ì[:•^œAç«gl‘Š¹Êf"áU_Ö$õ4@%”˜—£2=ò]*QétnlÕyTŠ´å¹\ıTR…û"@%”˜—£’Í¬£â[ã\J®Å4“Ú~‚¹®*R\ê4¤¥’Ï2ìgS–DÙ«¤¶·D%MŞBN´Àolalsş…({ÉÇà}^ğsyñ¡ªÏ¶¨dß­|âe¡õ•Ü¢n2à«$;¨æªS–¼d:ybõ{!0¼U¢cAç™"ÿĞª¹3:WœÿªÏ–¨ˆ„õQY(+¿Tb ƒ¥U—ˆp7Óèíı%cAçt¦D¢šËk5u~t{Tä1d*©ä¼sû
+*‹T²™CœºBNôÏXÀ¹à—J×Pyd³JåjN¦©Èé%…ø
+*‹£½ˆ«ú,w ²ìœŠx“Š ÿtŸå4v£2"ïŠüÅ¸²(ÑN…Z!-­¨¹oÊ²s~¶yøT¤¯m™Šº«¥IÍ6)µÓ\"¬9˜X…kÿ8x–/(¦W¢ËâŞ>¢ƒl®Ÿ—œË9Y¯1ö—hÁçêÃä×ª¯×Wğ,¨ì/ÔSô?| •M¶ÄH›.NAÅª¾²úÄT®¬-P±—Ê9d•$•™VÏ¬”9[{Ÿú×‚5@Å*î·íf£P™Lúıá“Sw*VPisvzrï^»4hæ‡î b•æÙG'ÄdĞìr*?ŠT§'íR©Ôm4ù¾û£ŸJíÎ-Õw‹YHE¿­=·BÙ«”hä¹úîÇ>*ÓI¥ÖšÕmÂ¢l9d«¥›J› $ùB¾Ğwß÷÷•ºF*å‘¹k•8µ€ÓÑLeRj·¤BSy`ŠĞØ:*‚Ì¯º3X_ô”.a©S©Å,¤ç–n*Ã2h6øÏJÏ}Û,íõÿ?¶êŒiWzÍ‡ÒÌW•ûÆ©Œ;3û
+çr¬™Ê¨Ûäêæ•û“‘a*u›&Æ¾ÄªJ¾ËÕ(p*ı'f©”yİãm¤2i¦ò¸RÈç‰É¤?|íÇ:©”Å‚ƒ–…Ttw{îÉ¨×ëùg4zÔv¿ÜE2ÖÑUıº€bİÌ˜®•;ºç`}ò?Ã“|lí~òàóïŞúğ«ïÏ@Å[×vüº* * ò¦SÁª£B_APP•«MEÓêËU?¾ÓNÅ‰-B·±‘Š®E'—¢RÖ¶haËa+TBµ±‰Š¶E'v÷•ZlmHc}…4¾òT©Ôôe0µj¡ÆÄ[òš|×R“o7œXMü:¦w0Z©Ğ;¦ßwex'ÆY8ÜdÈ6.¢¢å-Üù<T½5«uÄeX;æ©[hY-ošN™uÄ»Ñ±^*d&¾+Â;ìOyá„mã"*ZxÕ¿;ó^—å›bqàí"›¦ÃÿhÏ`2´
+/ŒÌB·q=‹NÎ½LÍ³DY¾U¹À×9VMSWÌP‰yTB·±™Š¦E'ç‹éflŞI:ª`¦Ò95ƒ(5O%t©èZt¢ªÏñÅÎàWÍÈãóÁ¾EËŸ¼¦¡‘Ö<•Ğml¢¢mÑ‰W}Ì™(‹É9ÿåá.­·q˜¾I˜w¿"BRx6²<{óƒ
+¨€
+¨€
+¨l…
+–™`dcƒ@T PT@T@P@T PPT@P4ÈŠ>  vú€V¨X°Ó´BÅ‚> *wú€Q‘;}”Öîô£Òn'”Äš> CT&bK‰n6•XÙé2DeãN!*ÃÁ` vÅYİé2D¥×”X*•5;}@†¨È>ëwú€LQÙ´ÓdˆÊÆ> CT6íô¢bÃNPÊú> Ëäºÿ
+0 ëöÕ¾p6á~    IEND®B`‚Yimage/pngOrbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _3http://anaturb.net/csstips/images/sheader_ie7_3.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.øKÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Wed, 04 Feb 2009 02:48:13 GMTT2041Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionaryùÒ*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á'069?HQSZbmoz|~€‚„†ˆŠŒ™›Ÿ¡£¥§©«­´ÂÍÚßíü"(3=]}‚«Ûàöú
+#';I[^t             n              vÔ9:;<_4http://anaturb.net/csstips/images/sheader_opera2.pngOw‰PNG
+
+   IHDR  —   k   ŒŸ?é   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<   PLTEÿ¥ €€ ÿ   ÿ  ÿÿÿÿÿ ïbòÊ  èIDATxÚìÜk{Ú0†a–7óÿÿÉİ >;İÖI”GŸ¥µğíƒ¹zûIDŒ]Õå,—Í4n[È”.¸à‚.¸\î¢ßÑıx¼~zÜ[T(Õn¨‰Í)™ëÊù2üq=½½ÁEwl¾Ìo{NqÌ\ßÉE'CMş.#ÌØœù7rÑöª.‹Ìm\î+¬¤yË¹À¥îdÚr»ı3Në˜Ê¦Û&6"èxíãí£¯gârdf4_JƒÚ®®*<şàr´ªšJ“Ø4¢†îRë£/và™‹$[—®AõÏ8Ì-»ütıÒâµÿ5°?™/›õ|Y¾'—¶»Ã¸ÈÈ¥i&¬KÙæ:—1s—iÁ¼úü²ÍÃRSOxÔc‹£©fëº+6ŸêÒÔ_¥»¤Îûm¸•6›¢Ìş¼_1Õ¤Ô$óE›íÖ¾¶ü*Ÿ=;-9§pÁå]¶kÖ¸¼hZ¸ÄvÙ‰P‘]’iì)dJ\pÁ\L\dÙ¿l]äŸ×àb”Ğ^Ç€â¹(ùçå:_"tÀÙ:öÎ.)®K°u— I¹»Ü_"Ô#Ş.!ë1ö—P,¸ì!Yp‰_'GÛ_lv¼½«Ï%BR|>3-\pÁ\p¹Ò…;P¸†ùÂ:†.¸à‚KÛû.ş6dï¢EËrs±ºAåß\dï²jR¾.0±çËÙèôsI¸àR¶³cSË{Ûq•ê¥­Ëıë—£y•DÓX»Èt`ªO¥öá)_zÌ—,’ëş’¾GNÇ—–ê·¸FËkÓ§‹,; ¬ceŠËx~1/Hq‰W'²¿t—’±‹FÓ4.F7¨ìİ§«zLeË5¯ÇònŸÿ[yYxR'¿×QAÓÂ\pÁ—+]¸…ûaˆ¨ë..¸¸¸àBà‚...¸¸àBàBà‚..¸¸¸àBà‚.¸àBà‚Ë{¹ÁâáBŒ ¡\SC÷Œ¤    IEND®B`‚Yimage/pngOrbplist00ÔjkX$versionX$objectsY$archiverT$top † ¯ "()012LMNOPQRSTUVWXYZ[\]^_`deU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _4http://anaturb.net/csstips/images/sheader_opera2.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aµa.û‚^ÈÓ3456AWNS.keysZNS.objects€ª789:;<=>?@€	€
+€€€€€€€€ªBCDEFGHIJK€€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-Length_Proxy-ConnectionWX-CacheSViaVApacheUbytesZkeep-aliveYimage/png_Mon, 14 May 2012 20:06:06 GMT_Sun, 08 Feb 2009 20:19:44 GMTS887Zkeep-alive_MISS from ipcop.localdomain_-1.1 ipcop.localdomain:800 (squid/2.7.STABLE9)Ò*+ab_NSMutableDictionary£ac/\NSDictionarywÒ*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Z ` { ~ ‚ … ˆ ‹  ’ ™ œ Ÿ ¢ ¥ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ À Ç Ó Û İ ß á(17:@IRT[cnp{}ƒ…‡‰‹šœ ¢¤¦¨ª¬®µÃÎÛàîı#)4>^~‚«Ûàöú
+#';I[^t             n              v    1 < K b € ’ ¨ Ñ Ò Ø:ñ:û;;;$;M<<@„@@ºDbDkHÖHßIP—P¡UUUQZı[_{_„_ºgDgNkÄkÍlu*u4yªy³yç}f}pãì‚"ŠŠ)Ÿ¨ß’Z’d             =              –Ú

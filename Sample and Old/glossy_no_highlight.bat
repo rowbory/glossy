@@ -1,0 +1,1 @@
+"C:\Program Files\Paratext 7\python24\python.exe" "C:\My Paratext Projects\glossy\glossy_no_highlight.py"

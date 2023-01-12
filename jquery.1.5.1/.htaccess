@@ -1,0 +1,7 @@
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=1728000, proxy-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(php|css|html|xml|txt|js)$"> 
+SetOutputFilter DEFLATE 
+</FilesMatch> 
