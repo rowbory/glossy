@@ -54,17 +54,22 @@ body {
 
 }
 </style>
-<script type="text/javascript" src="jquery.1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-3.6.3.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter/jquery.tablesorter.js"></script>
 <script type="text/javascript" src="jquery.tablesorter/jquery.metadata.js"></script>
 <link href="jquery.tablesorter/themes/blue/style.css" rel="stylesheet" type="text/css"></link>
 <link href="glossy.css" rel="stylesheet" type="text/css"></link>
-<link rel="icon"
-      type="image/png"
-      href="glossy64.png" />
-<link rel="icon"
-      type="image/png"
-      href="glossy16.png" />
+<link rel="icon"  type="image/png"  href="glossy64.png" />
+<link rel="icon"  type="image/png"  href="glossy16.png" />
+
+<!-- in case the output file is stored in a folder -->
+<script type="text/javascript" src="../jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../jquery.tablesorter/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="../jquery.tablesorter/jquery.metadata.js"></script>
+<link href="../jquery.tablesorter/themes/blue/style.css" rel="stylesheet" type="text/css"></link>
+<link href="../glossy.css" rel="stylesheet" type="text/css"></link>
+<link rel="icon"  type="image/png"  href="../glossy64.png" />
+<link rel="icon"  type="image/png"  href="../glossy16.png" />
 </head>
 <body>
 <div id="search"><input id="search_target" type="text" title="Type text here to search for it. Press esc to show everything again. Double-click me to toggle sort from right or left." /><div id="search_tip">&nbsp;</div></div>
