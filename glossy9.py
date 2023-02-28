@@ -24,36 +24,46 @@ xsl_filename = os.path.dirname(os.path.realpath(__file__)) + "/glossy9.xsl"
 interlinear_path = "/VMs/WinMacShare/My Paratext 8 Projects/AHS/Interlinear_en/"
 output_filename = "Lexicons/LexiconLDB.xhtml"
 
-# analyse arguments
-if (len(sys.argv)>1):
-	if (sys.argv[1]=="-?" or sys.argv[1]=="--help"):
-		print("Transform a Paratext Lexicon.xml file into an interactive HTML lexicon, optionally saving it in the calling folder.")
-		print("Syntax: glossy9.py [source-filename [output-filename]]")
-		print("      If no input filename is given then default input filename is "+xml_filename)
-		print("      If [output-filename] is - then output is to stdout")
-		print("      Otherwise default output filename is "+output_filename)
+def main():
+	# analyse arguments
+	if (len(sys.argv)>1):
+		if (sys.argv[1]=="-?" or sys.argv[1]=="--help"):
+			print("\nGlossy:\n\tTransform a Paratext Lexicon.xml file into an interactive \n\tHTML lexicon, optionally saving it in the calling folder.\n")
+			print("Syntax: glossy9.py [source-filename [output-filename]]")
+			print("\tIf no input filename is given then default input filename is\n\t\t"+xml_filename)
+			print("\tIf [output-filename] is - then output is to stdout")
+			print("\tOtherwise default output filename is \n\t\t"+output_filename)
+		else:
+			print("Args: "+str(len(sys.argv)))
+			if sys.argv[1]!="-":
+				xml_filename = sys.argv[1]
+				print("Input: "+xml_filename)
+			if len(sys.argv)>2 and sys.argv[2]!="-":
+				output_filename = sanitise_output(sys.argv[2])
+				print("Output: "+output_filename)
+
+	dom = ET.parse(xml_filename)
+	xslt = ET.parse(xsl_filename)
+	transform = ET.XSLT(xslt)
+	newdom = transform(dom)
+
+	if output_filename=="" or output_filename=="-":
+		print((ET.tostring(newdom, pretty_print=True)))
 	else:
-		print("Args: "+str(len(sys.argv)))
-		if sys.argv[1]!="-":
-			xml_filename = sys.argv[1]
-			print("Input: "+xml_filename)
-		if len(sys.argv)>2 and sys.argv[2]!="-":
-			output_filename = sys.argv[2]
-			print("Output: "+output_filename)
-
-dom = ET.parse(xml_filename)
-xslt = ET.parse(xsl_filename)
-transform = ET.XSLT(xslt)
-newdom = transform(dom)
-
-if len(sys.argv)>2 and sys.argv[2]=="-":
-	print((ET.tostring(newdom, pretty_print=True)))
-else:
-	transformed_file = ET.tostring(newdom, encoding="unicode") #pretty_print=True)
-	outfile = open(output_filename, 'w')
-	outfile.write(transformed_file)
+		transformed_file = ET.tostring(newdom, encoding="unicode") #pretty_print=True)
+		outfile = open(output_filename, 'w')
+		outfile.write(transformed_file)
 
 def sanitise_output(filename):
+	if len(filename)<2:
+		return ""
+	elif filename[0]=="/":
+		return ""
+
+	if filename[-4:]=="html":
+		return filename
+	else:
+		return filename+".xhtml"
 	return filename
 
 def walk_projects_dir(my_paratext_projects):
@@ -67,6 +77,10 @@ def walk_projects_dir(my_paratext_projects):
 				infile = unicode(ET.tostring(newdom, pretty_print=True))
 				outfile = open(outpath + "\\" + filename, 'a')
 				outfile.write(infile)
+
+# MAIN PROGRAM STARTS HERE
+
+main()
 
 # Things to check
 # - how are directory names handled in Windows? is / OK?

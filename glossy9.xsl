@@ -55,7 +55,7 @@ body {
 }
 </style>
 <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="jquery.tablesorter/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter/jquery.metadata.js"></script>
 <link href="jquery.tablesorter/themes/blue/style.css" rel="stylesheet" type="text/css"></link>
 <link href="glossy.css" rel="stylesheet" type="text/css"></link>
@@ -64,7 +64,7 @@ body {
 
 <!-- in case the output file is stored in a folder -->
 <script type="text/javascript" src="../jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="../jquery.tablesorter/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="../jquery.tablesorter/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="../jquery.tablesorter/jquery.metadata.js"></script>
 <link href="../jquery.tablesorter/themes/blue/style.css" rel="stylesheet" type="text/css"></link>
 <link href="../glossy.css" rel="stylesheet" type="text/css"></link>
@@ -72,20 +72,27 @@ body {
 <link rel="icon"  type="image/png"  href="../glossy16.png" />
 </head>
 <body>
-<div id="search"><input id="search_target" type="text" title="Type text here to search for it. Press esc to show everything again. Double-click me to toggle sort from right or left." /><div id="search_tip">&nbsp;</div></div>
+<div id="search"><span class="clearme" onclick="unsearch()">X</span><input id="search_target" type="text" title="Type text here to search for it. Press esc to show everything again. Double-click me to toggle sort from right or left." /><div id="search_tip">&nbsp;</div></div>
 <div id="lexicon">
-<menu type="context" id="otheroptions">
-	<menuitem label="Sort other end" onclick="toggle_sort_direction()"></menuitem>
-	<!--><menu label="Share on..." icon="/images/share_icon.gif">
-		<menuitem label="Twitter" icon="/images/twitter_icon.gif" onclick="goTo('//twitter.com/intent/tweet?text=' + document.title + ':  ' + window.location.href);"></menuitem>
-		<menuitem label="Facebook" icon="/images/facebook_icon16x16.gif" onclick="goTo('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
-	</menu>-->
-</menu>
 <table class="tablesorter" contextmenu="otheroptions"><thead><tr><th title="Target"><xsl:value-of select="Lexicon/Language/text()"/>
 </th><th>Gloss</th></tr></thead>
 <tbody>
 <xsl:for-each select="//Sense">
-<tr><td class="v"><xsl:value-of select="../../Lexeme/@Form"/><!--<span class="hm"><xsl:value-of select="../../Lexeme/@Homograph"/></span>--></td><td><xsl:value-of select="Gloss/text()"/></td></tr>
+
+<tr>
+<xsl:attribute name="class"><xsl:value-of select="../../Lexeme/@Type"/> GL<xsl:value-of select="Gloss/@Language"/></xsl:attribute>
+<td>
+<xsl:attribute name="title"><xsl:value-of select="../../Lexeme/@Type"/></xsl:attribute>
+<xsl:attribute name="class">v <xsl:value-of select="../../Lexeme/@Type"/></xsl:attribute>
+	<xsl:value-of select="../../Lexeme/@Form"/>
+	<xsl:if test="not(number(../../Lexeme/@Homograph)=1)">
+		<span class="hm"><xsl:value-of select="../../Lexeme/@Homograph"/></span>
+	</xsl:if>
+</td><td>
+<xsl:attribute name="class">g <xsl:value-of select="../../Lexeme/@Type"/> GL<xsl:value-of select="Gloss/@Language"/></xsl:attribute>
+<xsl:attribute name="title"><xsl:value-of select="Gloss/@Language"/></xsl:attribute>
+<xsl:value-of select="Gloss/text()"/></td></tr>
+
 </xsl:for-each>
 </tbody>
 </table>
@@ -99,7 +106,8 @@ $(function () {
 	var myTextExtraction = function(node) {
 		return $(node).text();
 	}
-	//$(".tablesorter").tablesorter({textExtraction: myTextExtraction, sortList: [[0,0],[1,0]]});
+	$(".tablesorter").tablesorter({textExtraction: myTextExtraction, sortList: [[0,0],[1,0]]});
+	//$(".tablesorter").tablesorter({sortList: [[0,0],[1,0]]});
 
 	$("input").dblclick( toggle_sort_direction );
 	$("input").focus( function () { $(this).addClass("active"); } )
@@ -124,6 +132,17 @@ $(function () {
 			if (search_text.length==0) {
 				// display all, when we clear the search box
 				unsearch();
+			} else if (search_text[0]=="*") {
+				// search for glosses beginning with * (wrong spellings?)
+				$(".tablesorter tbody tr").hide().each( function () {
+					field_text = sort_search_equivs($(this).children("td:eq(1)").text());
+					if (field_text.indexOf(search_text)>=0) {
+						$(this).show();
+					}
+				});
+			}  else if (search_text[0]=="?") {
+				// search for glosses or enrties with a ?
+
 			} else if (search_text.length==1) {
 				// type a single char and find all the TARGET language words BEGINNING with that char
 				$(".tablesorter tbody tr").hide().each( function () {
@@ -155,19 +174,30 @@ $(function () {
 					tr = $(this);
 					$(this).children("td").each( function () {
 						this_cell_verbatim = $(this).text();	// do all translation of equivalents first (eg a underline -> schwa)
-						this_cell = sort_search_equivs(this_cell_verbatim);	// do all translation of equivalents first (eg a underline -> schwa)
+						this_cell = this_cell_verbatim; //sort_search_equivs(this_cell_verbatim);	// do all translation of equivalents first (eg a underline -> schwa)
 						left_pos = this_cell.search(search_text);	// see whether the equivalent search is found in the equivalent source.
 						if (left_pos!=-1) {
 							tr.show();
+							//highlighted = this_cell_verbatim.replace(search_text, function (x) { return '<span class="highlight">'+x+'</span>'; } );
+							/*
+							Highlighting the results is a nightmare because we don't want to mess up the source of the search text for future searches.
+							For now I've abandoned my efforts. The span class highlight is supposed to help with this.
+
+
+							reWithCaptureGroup = new RegExp("("+search_text+")","");
+							found_text = this_cell_verbatim.replace(reWithCaptureGroup, "$1" );
+
 							new_span = document.createElement("span");
 							new_span.className = "highlight";
-							new_span.innerHTML = search_text_verbatim;	// would be better to display what is ACTUALLY there - something like this   this_cell.substr(left_pos,left_pos+search_text.length); //
+							new_span.innerHTML = found_text;
+							//new_span.innerHTML = this_cell.substr(left_pos,left_pos+found_text.length); //
 
 							before_text = this_cell.substr(0,left_pos);
-							after_text = this_cell.substr(left_pos+search_text.length);
+							after_text = this_cell.substr(left_pos+found_text.length);
 							$(this).html(before_text);
 							this.appendChild(new_span);
 							$(this).append(after_text);
+							*/
 						}
 					});
 				});
@@ -214,6 +244,7 @@ function unsearch() {
 	if (sort_order=="r") { sort_note = sorted_from_right_note; }
 	window.status = (total + " entries"+sort_note);
 	$("#search_tip").html("Total words: "+total+sort_note);
+	$("#search").click();
 }
 
 function delayed_search() {
@@ -257,18 +288,26 @@ function set_sort_direction(direction) {
 
 /* Hardcoded for Gworog. Temporary feature 1.6 to be expanded and generalised later. */
 function sort_search_equivs(inp) {
-	equivalents =  [["a̱","i̱"], ["ə","ɨ"]];
+
+
+	/*equivalents =  [["a̱","i̱"], ["ə","ɨ"]];
 	equiv_count = equivalents[0].length;
 	output = inp.toLowerCase();
 	i=0;
 //	while( i != equiv_count ) {
-		look_for = new RegExp(equivalents[0][i],["g"]);
+		look_for = new RegExp(equivalents[0][i],"g");
 		output = output.replace(look_for,equivalents[1][i]);
 		i++;
 //	}
-		look_for = new RegExp(equivalents[0][i],["g"]);
+		look_for = new RegExp(equivalents[0][i],"g");
 		output = output.replace(look_for,equivalents[1][i]);
 
+	if (inp[0]=="~") {
+
+	} else if (inp[0]=="*") {
+
+	}*/
+	output = inp;
 	return output;
 }
 
