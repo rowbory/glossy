@@ -1,5 +1,7 @@
 /*
-Glossy 1.5.1
+Glossy 9
+
+9. Rewrite for Paratext 9.
 
 1.5.1 with styles for sorting from the right
 david@rowbory.co.uk
@@ -33,6 +35,7 @@ div#search input {
 	right: 0px;
 	left: 0px;
 	width: 100%;
+	z-index: 0;
 }
 
 div#search, div#search input {
@@ -102,3 +105,28 @@ body.sort_right div#search input {
 body.sort_right table.tablesorter tbody td.v {
 	text-align: right; padding-right: 6px;
 }
+
+span.clearme {
+position: absolute; left: 0px; top: 0px;
+z-index: 1;
+opacity: 0;
+float: left;
+border-radius: 16px;
+border: 2px white solid;
+background-color: gray;
+color: white;
+cursor: grab; cursor: -webkit-grab;
+transition: opacity 0.5s;
+font-size: 12pt;
+margin: 4px;
+padding: 0 0.5em;
+}
+
+div#search:hover span.clearme { opacity: 1; }
+
+table.tablesorter tr td.v.Stem, table.tablesorter tr td.v.Word { color: #511; }
+table.tablesorter tr td.v.Suffix, table.tablesorter tr td.v.Prefix { color: #151; }
+table.tablesorter tr td.v.Suffix::before, table.tablesorter tr td.v.Prefix::after { content:"–"; color: #595; font-weight: bold; }
+table.tablesorter tr td.v.Phrase { color: #937; }
+table.tablesorter tr td.g.Suffix::before, table.tablesorter tr td.g.Prefix::after { content:"–"; color: #595; font-weight: bold; }
+.g.GLen { font-style: italic }
