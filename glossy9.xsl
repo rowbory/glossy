@@ -49,11 +49,7 @@ Lexicon
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>Glossy: <xsl:value-of select="Lexicon/Language/text()"/> Lexicon</title>
-<style>
-body {
 
-}
-</style>
 <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter/jquery.metadata.js"></script>
@@ -72,7 +68,7 @@ body {
 <link rel="icon"  type="image/png"  href="../glossy16.png" />
 </head>
 <body>
-<div id="search"><span class="clearme" onclick="unsearch()">X</span><input id="search_target" type="text" title="Type text here to search for it. Press esc to show everything again. Double-click me to toggle sort from right or left." /><div id="search_tip">&nbsp;</div></div>
+<div id="search"><span class="clearme" title="Clear" onclick="unsearch()">X</span><input id="search_target" type="text" title="Type text here to search for it. Press esc to show everything again. Double-click me to toggle sort from right or left." /><div id="search_tip">&nbsp;</div></div>
 <div id="lexicon">
 <table class="tablesorter" contextmenu="otheroptions"><thead><tr><th title="Target"><xsl:value-of select="Lexicon/Language/text()"/>
 </th><th>Gloss</th></tr></thead>

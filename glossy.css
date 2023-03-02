@@ -86,14 +86,20 @@ table.tablesorter thead tr th, table.tablesorter thead input, table.tablesorter 
 	font-family: "Andika", "Andika Basic", "Tahoma", "Arial Unicode MS";
 	font-size: 12pt;
 }
-table.tablesorter thead td { margin: auto; text-align: center; }
+table.tablesorter thead td, table.tablesorter thead th { margin: auto; text-align: center; cursor: pointer; }
 table.tablesorter thead input { width: 99%; opacity: 0.2; border: none; background: white; margin: auto; text-align: center; }
 table.tablesorter thead input:hover, table.tablesorter thead input.active { opacity: 1; }
+table.tablesorter thead td:hover, table.tablesorter thead th:hover { backgorund-color: #44c;  }
 table.tablesorter, table.tablesorter tbody, table.tablesorter tbody tr td { border-spacing: 0px; }
 table.tablesorter tr td { border: 0px white solid; border-bottom: 1px gray solid; background-color: #eef; }
 .tablesorter td:hover { color: blue; text-decoration: underline; cursor: pointer; }
 .highlight { color: red; background-color: #ff9; }
 table.tablesorter tr td.v { background-color: white; color: black; font-size: 14pt; }
+.tablesorter .tablesorter-headerDesc .tablesorter-header-inner::after { content: " 🡇"; }
+.tablesorter .tablesorter-headerAsc .tablesorter-header-inner::after { content: " 🡅" }
+.tablesorter .tablesorter-header-inner:hover { color:red; }
+
+.clearme:hover { background-color: red; }
 
 body.sort_right div#search input {
 	border-color: red;
@@ -124,9 +130,12 @@ padding: 0 0.5em;
 
 div#search:hover span.clearme { opacity: 1; }
 
-table.tablesorter tr td.v.Stem, table.tablesorter tr td.v.Word { color: #511; }
-table.tablesorter tr td.v.Suffix, table.tablesorter tr td.v.Prefix { color: #151; }
-table.tablesorter tr td.v.Suffix::before, table.tablesorter tr td.v.Prefix::after { content:"–"; color: #595; font-weight: bold; }
+table.tablesorter tr td.v.Stem, table.tablesorter tr td.v.Word 		{ color: #711; }
+table.tablesorter tr td.v.Suffix, table.tablesorter tr td.v.Prefix 	{ color: #171; }
+	table.tablesorter tr td.v.Suffix::before, table.tablesorter tr td.v.Prefix::after,
+	table.tablesorter tr td.g.Suffix::before, table.tablesorter tr td.g.Prefix::after {
+		content:"–"; color: #5a5; font-weight: bold; }
 table.tablesorter tr td.v.Phrase { color: #937; }
-table.tablesorter tr td.g.Suffix::before, table.tablesorter tr td.g.Prefix::after { content:"–"; color: #595; font-weight: bold; }
+ { content:"–"; color: #5a5; font-weight: bold; }
 .g.GLen { font-style: italic }
+table.tablesorter tr td.v:hover { background-color: #ffc; }

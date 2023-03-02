@@ -19,10 +19,16 @@ import sys
 # defaults
 mpp = "/VMs/WinMacShare/My Paratext 8 Projects/"
 project = "AHS"
-xml_filename = mpp+"AHS/Lexicon.xml" # "Lexicon.xml" #
+xml_filename = mpp+project+"/Lexicon.xml" # "Lexicon.xml" #
 xsl_filename = os.path.dirname(os.path.realpath(__file__)) + "/glossy9.xsl"
 interlinear_path = "/VMs/WinMacShare/My Paratext 8 Projects/AHS/Interlinear_en/"
 output_filename = "Lexicons/LexiconLDB.xhtml"
+
+# sanity checks
+if not(os.path.exists(xsl_filename)):
+	print("\n\nThe required file "+xsl_filename+" doesn't exist. Stopping.")
+	exit(1)
+
 
 def main():
 	# analyse arguments
@@ -42,14 +48,26 @@ def main():
 				output_filename = sanitise_output(sys.argv[2])
 				print("Output: "+output_filename)
 
+	# check input exists
+	if not(os.path.exists(xml_filename)):
+		print("\n\nThe input file "+xml_filename+" doesn't exist. Stopping.")
+		exit(2)
+
+	# parse and transform
 	dom = ET.parse(xml_filename)
 	xslt = ET.parse(xsl_filename)
 	transform = ET.XSLT(xslt)
 	newdom = transform(dom)
 
+	# output appropriately
 	if output_filename=="" or output_filename=="-":
 		print((ET.tostring(newdom, pretty_print=True)))
 	else:
+		# also check output dir exists
+		if not(os.path.exists(os.path.dirname(output_filename))):
+			print("\n\nThe output directory "+os.path.dirname(putput_filename)+" doesn't exist. Stopping.")
+			exit(2)
+
 		transformed_file = ET.tostring(newdom, encoding="unicode") #pretty_print=True)
 		outfile = open(output_filename, 'w')
 		outfile.write(transformed_file)
