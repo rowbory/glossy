@@ -95,7 +95,7 @@ Lexicon
 </div>
 <script type="text/javascript">
 var sort_order = "l";
-var sorted_from_right_note = " [sorted from the end]";
+var sorted_from_right_note = " [sorted from right]";
 
 $(function () {
 	var delayed_search_set = false;
@@ -137,7 +137,7 @@ $(function () {
 					}
 				});
 			}  else if (search_text[0]=="?") {
-				// search for glosses or enrties with a ?
+				// search for glosses or entries with a ?
 
 			} else if (search_text.length==1) {
 				// type a single char and find all the TARGET language words BEGINNING with that char

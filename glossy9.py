@@ -18,6 +18,7 @@ import sys
 
 # defaults
 mpp = "/VMs/WinMacShare/My Paratext 8 Projects/"
+mpp_fallbacks = ["C:\\My Paratext 8 Projects\\","C:\\My Paratext 89 Projects\\"]
 project = "AHS"
 xml_filename = mpp+project+"/Lexicon.xml" # "Lexicon.xml" #
 xsl_filename = os.path.dirname(os.path.realpath(__file__)) + "/glossy9.xsl"
@@ -41,6 +42,8 @@ def main():
 			print("\tOtherwise default output filename is \n\t\t"+output_filename)
 		else:
 			print("Args: "+str(len(sys.argv)))
+			if sys.argv[1]=="ALL":
+				walk_projects_dir()
 			if sys.argv[1]!="-":
 				xml_filename = sys.argv[1]
 				print("Input: "+xml_filename)
@@ -84,17 +87,19 @@ def sanitise_output(filename):
 		return filename+".xhtml"
 	return filename
 
-def walk_projects_dir(my_paratext_projects):
+def walk_projects_dir(my_paratext_projects,outpath):
 	for dirpath, dirnames, filenames in os.walk(my_paratext_projects):
 		for filename in filenames:
 			if filename.endswith(('Lexicon.xml', '.txt')):
-				dom = ET.parse(inputpath + filename)
+				dom = ET.parse(dirpath + filename)
 				xslt = ET.parse(xsltfile)
 				transform = ET.XSLT(xslt)
 				newdom = transform(dom)
-				infile = unicode(ET.tostring(newdom, pretty_print=True))
-				outfile = open(outpath + "\\" + filename, 'a')
-				outfile.write(infile)
+				transformed_file = unicode(ET.tostring(newdom, pretty_print=True))
+				outfile = open(outpath + filename, 'a')
+				print("dirpath:"+dirpath+"  filename:"+filename)
+				#outfile.write(transformed_file)
+
 
 # MAIN PROGRAM STARTS HERE
 
