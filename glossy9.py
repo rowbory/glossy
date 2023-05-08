@@ -12,69 +12,26 @@
 # Thanks to
 # https://stackoverflow.com/questions/16698935/how-to-transform-an-xml-file-using-xslt-in-python
 
+#######
+# 0. Imported libraries
 import lxml.etree as ET
 import os
 import sys
 
-# defaults
+
+#######
+# 1. defaults
 mpp = "/VMs/WinMacShare/My Paratext 8 Projects/"
-mpp_fallbacks = ["C:\\My Paratext 8 Projects\\","C:\\My Paratext 89 Projects\\"]
+mpp_fallbacks = ["C:\\My Paratext 8 Projects\\","C:\\My Paratext 9 Projects\\"]	# not yet used.
 project = "AHS"
 xml_filename = mpp+project+"/Lexicon.xml" # "Lexicon.xml" #
 xsl_filename = os.path.dirname(os.path.realpath(__file__)) + "/glossy9.xsl"
 interlinear_path = "/VMs/WinMacShare/My Paratext 8 Projects/AHS/Interlinear_en/"
-output_filename = "Lexicons/LexiconLDB.xhtml"
-
-# sanity checks
-if not(os.path.exists(xsl_filename)):
-	print("\n\nThe required file "+xsl_filename+" doesn't exist. Stopping.")
-	exit(1)
+output_filename = "Lexicons/AHS_Lexicon.xhtml"
 
 
-def main():
-	# analyse arguments
-	if (len(sys.argv)>1):
-		if (sys.argv[1]=="-?" or sys.argv[1]=="--help"):
-			print("\nGlossy:\n\tTransform a Paratext Lexicon.xml file into an interactive \n\tHTML lexicon, optionally saving it in the calling folder.\n")
-			print("Syntax: glossy9.py [source-filename [output-filename]]")
-			print("\tIf no input filename is given then default input filename is\n\t\t"+xml_filename)
-			print("\tIf [output-filename] is - then output is to stdout")
-			print("\tOtherwise default output filename is \n\t\t"+output_filename)
-		else:
-			print("Args: "+str(len(sys.argv)))
-			if sys.argv[1]=="ALL":
-				walk_projects_dir()
-			if sys.argv[1]!="-":
-				xml_filename = sys.argv[1]
-				print("Input: "+xml_filename)
-			if len(sys.argv)>2 and sys.argv[2]!="-":
-				output_filename = sanitise_output(sys.argv[2])
-				print("Output: "+output_filename)
-
-	# check input exists
-	if not(os.path.exists(xml_filename)):
-		print("\n\nThe input file "+xml_filename+" doesn't exist. Stopping.")
-		exit(2)
-
-	# parse and transform
-	dom = ET.parse(xml_filename)
-	xslt = ET.parse(xsl_filename)
-	transform = ET.XSLT(xslt)
-	newdom = transform(dom)
-
-	# output appropriately
-	if output_filename=="" or output_filename=="-":
-		print((ET.tostring(newdom, pretty_print=True)))
-	else:
-		# also check output dir exists
-		if not(os.path.exists(os.path.dirname(output_filename))):
-			print("\n\nThe output directory "+os.path.dirname(putput_filename)+" doesn't exist. Stopping.")
-			exit(2)
-
-		transformed_file = ET.tostring(newdom, encoding="unicode") #pretty_print=True)
-		outfile = open(output_filename, 'w')
-		outfile.write(transformed_file)
-
+#######
+# 2. Helper utilities
 def sanitise_output(filename):
 	if len(filename)<2:
 		return ""
@@ -100,10 +57,63 @@ def walk_projects_dir(my_paratext_projects,outpath):
 				print("dirpath:"+dirpath+"  filename:"+filename)
 				#outfile.write(transformed_file)
 
+#######
+# 3. sanity checks
+if not(os.path.exists(xsl_filename)):
+	print("\n\nThe required file "+xsl_filename+" doesn't exist. Stopping.")
+	exit(1)
 
-# MAIN PROGRAM STARTS HERE
+# check arguments
+if (len(sys.argv)>1):
+	if (sys.argv[1]=="-?" or sys.argv[1]=="--help"):
+		print("\nGlossy:\n\tTransform a Paratext Lexicon.xml file into an interactive \n\tHTML lexicon, optionally saving it in the calling folder.\n")
+		print("Syntax: glossy9.py [source-filename [output-filename]]")
+		print("\tIf no source-filename is given then we use \n\t\t"+xml_filename)
+		print("\tIf [output-filename] is - then output is to stdout")
+		print("\tOtherwise default output-filename is \n\t\t"+output_filename)
+	else:
+		print("Args: "+str(len(sys.argv)))
+		if sys.argv[1]=="ALL":
+			walk_projects_dir()
+		if sys.argv[1][0]!="-":
+			xml_filename = sys.argv[1]
+		if len(sys.argv)>2 and sys.argv[2]!="-":
+			output_filename = sanitise_output(sys.argv[2])
+		print("Input: "+xml_filename)
+		print("Output: "+output_filename)
 
-main()
+# check input exists
+if not(os.path.exists(xml_filename)):
+	print("\n\nThe input file "+xml_filename+" doesn't exist. Stopping.")
+	exit(2)
+
+#######
+# 4. Main transform and output
+def transform_xml(input_xml_filename,transform_xsl_filename,output_filename):
+	# parse and transform
+	dom = ET.parse(input_xml_filename)
+	xslt = ET.parse(transform_xsl_filename)
+	transform = ET.XSLT(xslt)
+	newdom = transform(dom)
+
+	# output appropriately
+	if output_filename=="" or output_filename=="-":
+		print((ET.tostring(newdom, pretty_print=True)))
+	else:
+		# also check output dir exists
+		if not(os.path.exists(os.path.dirname(output_filename))):
+			print("\n\nThe output directory "+os.path.dirname(output_filename)+" doesn't exist. Stopping.")
+			exit(2)
+
+		transformed_html = ET.tostring(newdom, encoding="unicode") #pretty_print=True)
+		outfile = open(output_filename, 'w')
+		outfile.write(transformed_html)
+
+
+########
+# 5. MAIN PROGRAM STARTS HERE
+
+transform_xml(xml_filename,xsl_filename,output_filename)
 
 # Things to check
 # - how are directory names handled in Windows? is / OK?
