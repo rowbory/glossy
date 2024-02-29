@@ -12,7 +12,7 @@ On Linux or Mac, run
 before you first run glossy.
 
 On Windows, Mac or Linux run it from a command line (if you need options) by typing
-- **python3 glossy9.py.**
+- **python3 glossy9.py**
 
 **Syntax: glossy9.py [project [output-filename [my-paratext-projects-folder]]]**
 
